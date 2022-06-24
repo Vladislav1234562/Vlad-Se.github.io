@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang='ru'>
+<head>
+<meta charset='utf-8' />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='css/style.min.css' type='text/css' rel='stylesheet' />
+<link href='css/mobile.min.css' type='text/css' rel='stylesheet' />
+<script src='js/jquery-1.7.2.min.js'></script>
+<script src='js/main.min.js'></script>
+<script src='js/slick.js'></script>
+</head>
+<body>
+<header class="header">
+	<div class="header__slider">
+		<div class="header__slider-slide">Refer a friend and get $10 off! 🔥 Offer ends February 27!</div>
+		<div class="header__slider-slide">🔥 Offer ends February 27!</div>
+		<div class="header__slider-slide">Refer a friend and get $10 off! 🔥</div>
+	</div>
+	<div class="header__middle">
+		<div class="header__middle-container telo-gamevendor">
+			<div class="header__address">Dublin, Republic of Ireland</div>
+			<a class="header__logo" href="#"><img src="img/logo.svg" alt="logotype"></a>
+			<div class="header__small-menu">
+				<div class="header__small-menu-icon"><img src="img/search.svg" alt="search"></div>
+				<div class="header__small-menu-icon"><img src="img/profile.svg" alt="profile"></div>
+				<a class="header__small-menu-icon" href="#"><img src="img/basket.svg" alt="basket"></a>
+			</div>
+		</div>
+	</div>
+	<nav class="header__nav telo-gamevendor">
+		<ul>
+			<li class="header__nav-menu"><a href="#">Discover</a></li>
+			<li class="header__nav-menu"><a href="#">Browse</a></li>
+			<li class="header__nav-menu"><a href="#">Store</a></li>
+			<li class="header__nav-menu"><a href="#">Platforms</a></li>
+			<li class="header__nav-menu"><a href="#">Releases</a></li>
+			<li class="header__nav-menu"><a href="#">Mobile</a></li>
+			<li class="header__nav-menu"><a href="#">Articles</a></li>
+			<li class="header__nav-menu"><a href="#">Blog</a></li>
+			<li class="header__nav-menu"><a href="#">News</a></li>
+			<li class="header__nav-menu"><a href="#">Contacts</a></li>
+		</ul>
+		<div class="header__nav-line"></div>
+	</nav>
+	<nav class="header__nav-mobile">
+		<ul>
+			<li class="header__nav-mobile-menu header__nav-mobile-menu--active">
+				<span class="header__nav-mobile-link">
+					<span class="header__nav-mobile-icon"><img src="img/menu_1.svg" alt="Home"><img src="img/menu_1_active.svg" alt="Home"></span>
+					<span class="header__nav-mobile-name">Home</span>
+				</span>
+			</li>
+			<li class="header__nav-mobile-menu">
+				<a class="header__nav-mobile-link" href="#">
+					<span class="header__nav-mobile-icon"><img src="img/menu_2.svg" alt="Browse"><img src="img/menu_2_active.svg" alt="Home"></span>
+					<span class="header__nav-mobile-name">Browse</span>
+				</a>
+			</li>
+			<li class="header__nav-mobile-menu">
+				<a class="header__nav-mobile-link" href="#">
+					<span class="header__nav-mobile-icon"><img src="img/menu_3.svg" alt="Search"><img src="img/menu_3_active.svg" alt="Home"></span>
+					<span class="header__nav-mobile-name">Search</span>
+				</a>
+			</li>
+			<li class="header__nav-mobile-menu">
+				<a class="header__nav-mobile-link" href="#">
+					<span class="header__nav-mobile-icon"><img src="img/menu_4.svg" alt="Account"><img src="img/menu_4_active.svg" alt="Home"></span>
+					<span class="header__nav-mobile-name">Account</span>
+				</a>
+			</li>
+			<li class="header__nav-mobile-menu">
+				<a class="header__nav-mobile-link" href="#">
+					<span class="header__nav-mobile-icon"><img src="img/menu_5.svg" alt="Cart"><img src="img/menu_5_active.svg" alt="Home"></span>
+					<span class="header__nav-mobile-name">Cart</span>
+				</a>
+			</li>
+		</ul>
+	</nav>
+</header>
+<main>
+<article>
+	<section id="breadcrumbs" class="telo-gamevendor">
+		<a href="#" class="breadcrumbs__item">Home</a>
+		<span class="breadcrumbs__icon"></span>
+		<a itemprop="item" href="#" class="breadcrumbs__item">Discover</a>
+		<span class="breadcrumbs__icon"></span>
+		<span itemprop="item" class="breadcrumbs__item">Games</span>	
+	</section>
+	<section id="text-container" class="telo-gamevendor">
+		<h1>Games</h1>
+	</section>
+	<section id="banner" class="banner telo-gamevendor">
+		<div class="banner__text">
+			<div class="banner__title">Refer a friends and get $10 off!</div>
+			<div class="banner__description">Connect with friends. Refer a friend and unlock your $10 coupon! Offer ends February 27.</div>
+			<button class="banner__btn">Invite a friend</button>
+		</div>
+		<img src="img/img-banner.png" alt="banner">
+	</section>
+	<section id="filter" class="filter telo-gamevendor">
+		<div class="filter__container filter__container--search">
+			<div class="filter__name">Search for games</div>
+			<input class="filter__search" type="text" id="search-filter" data-empty="Search..." placeholder="Search...">
+		</div>
+		<div class="filter__mobile"><div class="filter__buter"></div>Filters</div>
+		<div class="filter__sel-all">
+			<div class="filter__container">
+				<div class="filter__name">Category</div>
+				<div class="filter__sel filter__sel--category" name="type-f" data-val="Strategy RPG Action">
+					<div class="filter__sel-title" data-default="">
+						<span class="filter__one-title">Strategy<span class="filter__one-title-close"></span></span></span>
+						<span class="filter__one-title">RPG<span class="filter__one-title-close"></span></span></span>
+						<span class="filter__one-title">Action<span class="filter__one-title-close"></span></span></span>
+						<span class="filter__one-title">Shooter<span class="filter__one-title-close"></span></span></span>
+						<span class="filter__one-title">Clear all<span class="filter__one-title-close"></span></span></span>
+					</div>
+					<div class="filter__sel-content">
+						<span class="filter__sel-container">
+							<input class="filter__sel-input" type="radio" name="Category" value="Category1">
+							<label class="filter__sel-label">Card Game</label>
+						</span>
+						<span class="filter__sel-container">
+							<input class="filter__sel-input" type="radio" name="Category" value="Category2">
+							<label class="filter__sel-label">Simulator</label>
+						</span>
+						<span class="filter__sel-container">
+							<input class="filter__sel-input" type="radio" name="Category" value="Category3">
+							<label class="filter__sel-label">Multiplayer</label>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="filter__container">
+				<div class="filter__name">Sort by</div>
+				<div class="filter__sel" name="type-f" data-val="Popular">
+					<div class="filter__sel-title" data-default="Popular">Popular</div>
+					<div class="filter__sel-content">
+						<span class="filter__sel-container">
+							<input class="filter__sel-input" type="radio" name="Popular" value="">
+							<label class="filter__sel-label active">Popular</label>
+						</span>
+						<span class="filter__sel-container">
+							<input class="filter__sel-input" type="radio" name="Popular" value="Popular1">
+							<label class="filter__sel-label">Popular1</label>
+						</span>
+						<span class="filter__sel-container">
+							<input class="filter__sel-input" type="radio" name="Popular" value="Popular2">
+							<label class="filter__sel-label">Popular2</label>
+						</span>	 
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="tags telo-gamevendor" id="tags">
+		<div class="tags__item">
+			Strategy
+			<div class="tags__item-close"></div>
+		</div>
+		<div class="tags__item">
+			RPG
+			<div class="tags__item-close"></div>
+		</div>
+		<div class="tags__item">
+			Action
+			<div class="tags__item-close"></div>
+		</div>
+		<div class="tags__item">
+			Shooter
+			<div class="tags__item-close"></div>
+		</div>
+		<div class="tags__item">
+			Clear all
+			<div class="tags__item-close"></div>
+		</div>
+	</section>
+	<section class="cards telo-gamevendor" id="cards">
+		<article class="cards__all">
+			<article class="card">
+				<a class="card__link" href="#">
+					<span class="card__img"><img src="img/card_1.jpg" alt="card1"></span>
+					<span class="card__info">
+						<span class="card__category card__category--rpg">Action RPG</span>
+						<span class="card__name">Saints Row</span>
+						<span class="card__raiting">
+							<span class="card__raiting-stars">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+							</span>
+							<span class="card__raiting-count">0</span>
+						</span>
+						<span class="card__anons">Platinum Edition</span>
+						<span class="card__bottom">
+							<span class="card__price">
+								<span class="card__price-old">$1,299</span>
+								<span class="card__price-new">$649</span>
+							</span>
+							<span class="card__sale">-50%</span>
+						</span>
+					</span>
+				</a>
+			</article>
+			<article class="card">
+				<a class="card__link" href="#">
+					<span class="card__img"><img src="img/card_2.jpg" alt="card2"></span>
+					<span class="card__info">
+						<span class="card__category card__category--multiplayer-rpg">Multiplayer RPG</span>
+						<span class="card__name">Paladins</span>
+						<span class="card__raiting">
+							<span class="card__raiting-stars">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star.png" alt="">
+							</span>
+							<span class="card__raiting-count">1,820</span>
+						</span>
+						<span class="card__anons">Get the Captain Price Operator included with purchase</span>
+						<span class="card__bottom">
+							<span class="card__price">
+								<span class="card__price-new">Free</span>
+							</span>
+						</span>
+					</span>
+				</a>
+			</article>
+			<article class="card">
+				<a class="card__link" href="#">
+					<span class="card__img"><img src="img/card_3.jpg" alt="card3"></span>
+					<span class="card__info">
+						<span class="card__category card__category--action">Action</span>
+						<span class="card__name">Far Cry 6</span>
+						<span class="card__raiting">
+							<span class="card__raiting-stars">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star.png" alt="">
+							</span>
+							<span class="card__raiting-count">2,888</span>
+						</span>
+						<span class="card__anons">In-Game Content</span>
+						<span class="card__bottom">
+							<span class="card__price">
+								<span class="card__price-old">$1,299</span>
+								<span class="card__price-new">$649</span>
+							</span>
+							<span class="card__sale">-50%</span>
+						</span>
+					</span>
+				</a>
+			</article>
+			<article class="card">
+				<a class="card__link" href="#">
+					<span class="card__img"><img src="img/card_4.jpg" alt="card4"></span>
+					<span class="card__info">
+						<span class="card__category card__category--shooter">Shooter</span>
+						<span class="card__name">Call of Duty: Warzone</span>
+						<span class="card__raiting">
+							<span class="card__raiting-stars">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+							</span>
+							<span class="card__raiting-count">18,982</span>
+						</span>
+						<span class="card__anons">Get the Captain Price Operator included with purchase</span>
+						<span class="card__bottom">
+							<span class="card__price">
+								<span class="card__price-old">$1,299</span>
+								<span class="card__price-new">$649</span>
+							</span>
+							<span class="card__sale">-50%</span>
+						</span>
+					</span>
+				</a>
+			</article>
+			<article class="card">
+				<a class="card__link" href="#">
+					<span class="card__img"><img src="img/card_5.jpg" alt="card5"></span>
+					<span class="card__info">
+						<span class="card__category card__category--action">Action</span>
+						<span class="card__name">World of Warcraft: Shadowlands</span>
+						<span class="card__raiting">
+							<span class="card__raiting-stars">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_sl_active.png" alt="">
+								<img src="img/star.png" alt="">
+							</span>
+							<span class="card__raiting-count">299</span>
+						</span>
+						<span class="card__anons">Includes access to World of Warcraft, Burning Crusade Classic, and WoW Classic!!</span>
+						<span class="card__bottom">
+							<span class="card__price">
+								<span class="card__price-new">Free</span>
+							</span>
+						</span>
+					</span>
+				</a>
+			</article>
+			<article class="card">
+				<a class="card__link" href="#">
+					<span class="card__img"><img src="img/card_6.jpg" alt="card6"></span>
+					<span class="card__info">
+						<span class="card__category card__category--shooter">Shooter</span>
+						<span class="card__name">Fortnite</span>
+						<span class="card__raiting">
+							<span class="card__raiting-stars">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_sl_active.png" alt="">
+							</span>
+							<span class="card__raiting-count">9,199</span>
+						</span>
+						<span class="card__anons">Get the Captain Price Operator included with purchase</span>
+						<span class="card__bottom">
+							<span class="card__price">
+								<span class="card__price-old">$1,299</span>
+								<span class="card__price-new">$649</span>
+							</span>
+							<span class="card__sale">-50%</span>
+						</span>
+					</span>
+				</a>
+			</article>
+			<article class="card">
+				<a class="card__link" href="#">
+					<span class="card__img"><img src="img/card_7.jpg" alt="card7"></span>
+					<span class="card__info">
+						<span class="card__category card__category--rpg">Action RPG</span>
+						<span class="card__name">Horizon: Forbidden West</span>
+						<span class="card__raiting">
+							<span class="card__raiting-stars">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_sl_active.png" alt="">
+							</span>
+							<span class="card__raiting-count">9,199</span>
+						</span>
+						<span class="card__anons">Platinum Edition</span>
+						<span class="card__bottom">
+							<span class="card__price">
+								<span class="card__price-old">$1,299</span>
+								<span class="card__price-new">$649</span>
+							</span>
+						</span>
+					</span>
+				</a>
+			</article>
+			<article class="card">
+				<a class="card__link" href="#">
+					<span class="card__img"><img src="img/card_8.jpg" alt="card8"></span>
+					<span class="card__info">
+						<span class="card__category card__category--action">Action</span>
+						<span class="card__name">Need for Speed: Heat</span>
+						<span class="card__raiting">
+							<span class="card__raiting-stars">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_sl_active.png" alt="">
+							</span>
+							<span class="card__raiting-count">2,911</span>
+						</span>
+						<span class="card__anons">Includes access to World of Warcraft, Burning Crusade Classic, and WoW Classic!</span>
+						<span class="card__bottom">
+							<span class="card__price">
+								<span class="card__price-new">$649</span>
+							</span>
+						</span>
+					</span>
+				</a>
+			</article>
+			<article class="card">
+				<a class="card__link" href="#">
+					<span class="card__img"><img src="img/card_9.jpg" alt="card9"></span>
+					<span class="card__info">
+						<span class="card__category card__category--action">Action</span>
+						<span class="card__name">Spider-Man: Miles Morales</span>
+						<span class="card__raiting">
+							<span class="card__raiting-stars">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+							</span>
+							<span class="card__raiting-count">920</span>
+						</span>
+						<span class="card__anons">Get the Captain Price Operator included with purchase</span>
+						<span class="card__bottom">
+							<span class="card__price">
+								<span class="card__price-old">$1,299</span>
+								<span class="card__price-new">$649</span>
+							</span>
+							<span class="card__sale">-50%</span>
+						</span>
+					</span>
+				</a>
+			</article>
+			<article class="card">
+				<a class="card__link" href="#">
+					<span class="card__img"><img src="img/card_10.jpg" alt="card10"></span>
+					<span class="card__info">
+						<span class="card__category card__category--card-game">Card Game</span>
+						<span class="card__name">Witcher 3: Wild Hunt</span>
+						<span class="card__raiting">
+							<span class="card__raiting-stars">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+							</span>
+							<span class="card__raiting-count">299,890</span>
+						</span>
+						<span class="card__anons">Will only be usable in the new Classic Format when it is released</span>
+						<span class="card__bottom">
+							<span class="card__price">
+								<span class="card__price-old">$1,299</span>
+								<span class="card__price-new">$649</span>
+							</span>
+						</span>
+					</span>
+				</a>
+			</article>
+			<article class="card">
+				<a class="card__link" href="#">
+					<span class="card__img"><img src="img/card_11.jpg" alt="card11"></span>
+					<span class="card__info">
+						<span class="card__category card__category--shooter">Shooter</span>
+						<span class="card__name">Guardians of the Galaxy</span>
+						<span class="card__raiting">
+							<span class="card__raiting-stars">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+							</span>
+							<span class="card__raiting-count">29</span>
+						</span>
+						<span class="card__anons">In-Game Content</span>
+						<span class="card__bottom">
+							<span class="card__price">
+								<span class="card__price-old">$1,299</span>
+								<span class="card__price-new">$649</span>
+							</span>
+							<span class="card__sale">-50%</span>
+						</span>
+					</span>
+				</a>
+			</article>
+			<article class="card">
+				<a class="card__link" href="#">
+					<span class="card__img"><img src="img/card_12.jpg" alt="card12"></span>
+					<span class="card__info">
+						<span class="card__category card__category--shooter">Shooter</span>
+						<span class="card__name">Crash Team Racing</span>
+						<span class="card__raiting">
+							<span class="card__raiting-stars">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_sl_active.png" alt="">
+							</span>
+							<span class="card__raiting-count">9,199</span>
+						</span>
+						<span class="card__anons">Get the Captain Price Operator included with purchase</span>
+						<span class="card__bottom">
+							<span class="card__price">
+								<span class="card__price-old">$1,299</span>
+								<span class="card__price-new">$649</span>
+							</span>
+							<span class="card__sale">-50%</span>
+						</span>
+					</span>
+				</a>
+			</article>
+			<article class="card">
+				<a class="card__link" href="#">
+					<span class="card__img"><img src="img/card_13.jpg" alt="card13"></span>
+					<span class="card__info">
+						<span class="card__category card__category--multiplayer-rpg">Multiplayer RPG</span>
+						<span class="card__name">Spider-Man</span>
+						<span class="card__raiting">
+							<span class="card__raiting-stars">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_active.png" alt="">
+								<img src="img/star_sl_active.png" alt="">
+							</span>
+							<span class="card__raiting-count">1,820</span>
+						</span>
+						<span class="card__anons">Includes access to World of Warcraft, Burning Crusade Classic, and WoW Classic!</span>
+						<span class="card__bottom">
+							<span class="card__price">
+								<span class="card__price-new">$649</span>
+							</span>
+						</span>
+					</span>
+				</a>
+			</article>
+			<article class="card">
+				<a class="card__link" href="#">
+					<span class="card__img"><img src="img/card_noimg.jpg" alt="card"></span>
+					<span class="card__info">
+						<span class="card__category card__category--rpg">Action RPG</span>
+						<span class="card__name">Dragon Age 5</span>
+						<span class="card__raiting">
+							<span class="card__raiting-stars">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+								<img src="img/star.png" alt="">
+							</span>
+							<span class="card__raiting-count">0</span>
+						</span>
+						<span class="card__anons">Non released</span>
+						<span class="card__bottom">
+							<span class="card__price">
+								<span class="card__price-new"></span>
+							</span>
+						</span>
+					</span>
+				</a>
+			</article>
+			<article class="add-card">
+				<div class="add-card__anons">You can add a product card by clicking on the button</div>
+				<button class="add-card__btn"><span class="add-card__icon"></span>Add card</button>
+			</article>
+		</article>
+		<a class="cards__btn-link" href="#">Show more</a>
+		<div class="pagination">
+			<span class="pagination__prev pagination--noactive"></span>
+			<span class="pagination__page pagination__page--active">1</span>
+			<a class="pagination__page" href="">2</a>
+			<a class="pagination__page" href="">3</a>
+			<a class="pagination__page" href="">4</a>
+			<a class="pagination__page" href="">5</a>
+			<span class="pagination__points">...</span>
+			<a class="pagination__page" href="">99</a>
+			<a class="pagination__next" href=""></a>
+		</div>
+	</section>
+	<section class="tabs telo-gamevendor" id="tabs">
+		<div class="text text-center">
+			<div class="text__title"><h2>Frequently asked questions</h2></div>
+			<div class="text__description">Everything you need to know about the games.</div>
+		</div>
+		<div class="accordions">
+			<div class="accordions__item">
+				<div class="accordions__item-top">
+					<div class="accordions__name">How does work?</div>
+					<div class="accordions__open"></div>
+				</div>
+				<div class="accordions__description">
+					<p>A video game or computer game is an electronic game that involves interaction with a user interface or input device – such as a joystick, controller, keyboard, or motion sensing device – to generate visual feedback. This feedback is shown on a video display device, such as a TV set, monitor, touchscreen, or virtual reality headset. A video game or computer game is an electronic game that involves interaction with a user interface or input device – such as a joystick, controller, keyboard, or motion sensing device – to generate visual feedback. This feedback is shown on a video display device, such as a TV set, monitor, touchscreen, or virtual reality headset.</p>
+				</div>
+			</div>
+			<div class="accordions__item accordions__item--open">
+				<div class="accordions__item-top">
+					<div class="accordions__name">What is a game?</div>
+					<div class="accordions__open"></div>
+				</div>
+				<div class="accordions__description">
+					<p>A video game or computer game is an electronic game that involves interaction with a user interface or input device – such as a joystick, controller, keyboard, or motion sensing device – to generate visual feedback. This feedback is shown on a video display device, such as a TV set, monitor, touchscreen, or virtual reality headset. A video game or computer game is an electronic game that involves interaction with a user interface or input device – such as a joystick, controller, keyboard, or motion sensing device – to generate visual feedback. This feedback is shown on a video display device, such as a TV set, monitor, touchscreen, or virtual reality headset.</p>
+					<ul>
+						<li>motion sensing device,</li>
+						<li>controller,</li>
+						<li>keyboard,</li>
+						<li>joystick.</li>
+					</ul>
+					<h3>Visual feedback.</h3>
+					<p>A video game or computer game is an electronic game that involves interaction with a user interface or input device – such as a joystick, controller, keyboard, or motion sensing device – to generate visual feedback.</p>
+				</div>
+			</div>
+			<div class="accordions__item">
+				<div class="accordions__item-top">
+					<div class="accordions__name">Is there a free trial available?</div>
+					<div class="accordions__open"></div>
+				</div>
+				<div class="accordions__description">
+					<p>A video game or computer game is an electronic game that involves interaction with a user interface or input device – such as a joystick, controller, keyboard, or motion sensing device – to generate visual feedback. This feedback is shown on a video display device, such as a TV set, monitor, touchscreen, or virtual reality headset. A video game or computer game is an electronic game that involves interaction with a user interface or input device – such as a joystick, controller, keyboard, or motion sensing device – to generate visual feedback. This feedback is shown on a video display device, such as a TV set, monitor, touchscreen, or virtual reality headset.</p>
+					<ul>
+						<li>motion sensing device,</li>
+						<li>controller,</li>
+						<li>keyboard,</li>
+						<li>joystick.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="accordions__item">
+				<div class="accordions__item-top">
+					<div class="accordions__name">How does billing work?</div>
+					<div class="accordions__open"></div>
+				</div>
+				<div class="accordions__description">
+					<h3>Visual feedback.</h3>
+					<p>A video game or computer game is an electronic game that involves interaction with a user interface or input device – such as a joystick, controller, keyboard, or motion sensing device – to generate visual feedback.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+</article>
+</main>
+<footer class="footer">
+	<div class="footer__top telo-gamevendor">
+		<div class="footer__text">
+			<div class="footer__title">Join our newsletter</div>
+			<div class="footer__description">We’ll send you a nice letter one per week. No spam.</div>
+		</div>
+		<form class="footer__form" action="">
+			<input class="footer__form-inp" type="text" data-empty="Enter email" placeholder="Enter email">
+			<button class="footer__form-btn">Subscribe</button>
+		</form>
+	</div>
+	<div class="footer__menu telo-gamevendor">
+		<nav class="footer__menu-container">
+			<div class="footer__menu-one">
+				<div class="footer__menu-name">Categories</div>
+				<ul>
+					<li><a href="#">Strategy</a></li>
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Shooter</a></li>
+					<li><a href="#">Card Game</a></li>
+					<li><a href="#">Simulator</a></li>
+					<li><a href="#">RPG</a></li>
+					<li><a href="#">Multiplayer</a></li>
+				</ul>
+			</div>
+			<div class="footer__menu-one">
+				<div class="footer__menu-name">Company</div>
+				<ul>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Careers</a></li>
+					<li><a href="#">Press</a></li>
+					<li><a href="#">News</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</div>
+			<div class="footer__menu-one">
+				<div class="footer__menu-name">Legal</div>
+				<ul>
+					<li><a href="#">Terms</a></li>
+					<li><a href="#">Privacy</a></li>
+					<li><a href="#">Cookies</a></li>
+					<li><a href="#">Licenses</a></li>
+					<li><a href="#">Settings</a></li>
+				</ul>
+			</div>
+			<div class="footer__menu-one">
+				<div class="footer__menu-name">Legal</div>
+				<ul>
+					<li><a href="#">Twitter</a></li>
+					<li><a href="#">Facebook</a></li>
+					<li><a href="#">Dribbble</a></li>
+					<li><a href="#">GitHub</a></li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+	<div class="footer__bottom telo-gamevendor">Copyright © GameVendor, 2022</div>
+</footer>
+
+<div class="modal-add">
+	<div class="modal-add__window">
+		<div class="modal-add__title">Add to card</div>
+		<div class="filter__name">Name</div>
+		<input class="modal-add__name" type="text" data-empty="Name card" placeholder="Name card" value="">
+		<div class="filter__name">Description</div>
+		<textarea class="modal-add__description" name="description-add" id="" cols="30" rows="10" data-empty="Description card" placeholder="Description card"></textarea>
+		<div class="modal-add__container">
+			<div class="filter__container">
+				<div class="filter__name">Category</div>
+				<div class="filter__sel" name="type-f" data-val="">
+					<div class="filter__sel-title" data-default="">Popular</div>
+					<div class="filter__sel-content">
+						<span class="filter__sel-container">
+							<input class="filter__sel-input" type="radio" name="Popular" value="Strategy">
+							<label class="filter__sel-label active">Strategy</label>
+						</span>
+						<span class="filter__sel-container">
+							<input class="filter__sel-input" type="radio" name="Popular" value="Action">
+							<label class="filter__sel-label">Action</label>
+						</span>
+						<span class="filter__sel-container">
+							<input class="filter__sel-input" type="radio" name="Popular" value="Shooter">
+							<label class="filter__sel-label">Shooter</label>
+						</span>	 
+						<span class="filter__sel-container">
+							<input class="filter__sel-input" type="radio" name="Popular" value="Card Game">
+							<label class="filter__sel-label">Card Game</label>
+						</span>	 
+						<span class="filter__sel-container">
+							<input class="filter__sel-input" type="radio" name="Popular" value="Simulator">
+							<label class="filter__sel-label">Simulator</label>
+						</span>	 
+						<span class="filter__sel-container">
+							<input class="filter__sel-input" type="radio" name="Popular" value="RPG">
+							<label class="filter__sel-label">RPG</label>
+						</span>	 
+						<span class="filter__sel-container">
+							<input class="filter__sel-input" type="radio" name="Popular" value="Multiplayer">
+							<label class="filter__sel-label">Multiplayer</label>
+						</span>
+					</div>
+				</div>
+			</div>
+			<div class="modal-add__price-container">
+				<div class="filter__name">Price</div>
+				<input class="modal-add__price" type="text" data-empty="Price card" placeholder="Price card" value="">
+			</div>
+		</div>
+		<button class="modal-add__btn">Add card</button>
+	</div>
+</div>
+
+</body>
+</html>

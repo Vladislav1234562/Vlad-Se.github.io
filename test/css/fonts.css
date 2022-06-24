@@ -1,0 +1,65 @@
+@font-face {
+    font-family: 'IntroBold';
+  
+    src: url('../fonts/IntroBold.ttf?#iefix') format('embedded-opentype'),
+         url('../fonts/IntroBold.ttf')  format('opentype'),
+           url('../fonts/IntroBold.otf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'IntroRegular';
+  
+    src: url('pt-sans-caption.woff2')  format('woff2'),
+    url('../fonts/IntroRegular.ttf?#iefix') format('embedded-opentype'),
+         url('../fonts/IntroRegular.ttf')  format('opentype'),
+           url('../fonts/IntroRegular.otf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'MuseoSansCyrl300';
+  
+    src: url('pt-sans-caption.woff2')  format('woff2'),
+    url('../fonts/MuseoSansCyrl300.ttf?#iefix') format('embedded-opentype'),
+         url('../fonts/MuseoSansCyrl300.ttf')  format('opentype'),
+           url('../fonts/MuseoSansCyrl300.otf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'MuseoSansCyrl500';
+  
+    src: url('pt-sans-caption.woff2')  format('woff2'),
+    url('../fonts/MuseoSansCyrl500.ttf?#iefix') format('embedded-opentype'),
+         url('../fonts/MuseoSansCyrl500.ttf')  format('opentype'),
+           url('../fonts/MuseoSansCyrl500.otf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'MuseoSansCyrl700';
+  
+    src: url('pt-sans-caption.woff2')  format('woff2'),
+    url('../fonts/MuseoSansCyrl700.ttf?#iefix') format('embedded-opentype'),
+         url('../fonts/MuseoSansCyrl700.ttf')  format('opentype'),
+           url('../fonts/MuseoSansCyrl700.otf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'MuseoSansCyrl100';
+  
+    src: url('pt-sans-caption.woff2')  format('woff2'),
+    url('../fonts/MuseoSansCyrl100.ttf?#iefix') format('embedded-opentype'),
+         url('../fonts/MuseoSansCyrl100.ttf')  format('opentype'),
+           url('../fonts/MuseoSansCyrl100.otf')  format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }

@@ -1,0 +1,52 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url("../fonts/Inter-Medium.ttf?#iefix") format("embedded-opentype"), url("../fonts/Inter-Medium.ttf") format("opentype"), url("../fonts/Inter-Medium.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url("pt-sans-caption.woff2") format("woff2"), url("../fonts/Inter-Regular.ttf?#iefix") format("embedded-opentype"), url("../fonts/Inter-Regular.ttf") format("opentype"), url("../fonts/Inter-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: url("pt-sans-caption.woff2") format("woff2"), url("../fonts/Inter-SemiBold.ttf?#iefix") format("embedded-opentype"), url("../fonts/Inter-SemiBold.ttf") format("opentype"), url("../fonts/Inter-SemiBold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: #ffffff;
+  color: #000000;
+  font-family: openSans;
+  font-size: 14px;
+  line-height: 18px; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+.c {
+  clear: both; }
+
+img {
+  border: none;
+  outline: none;
+  vertical-align: bottom; }
+
+.wow {
+  visibility: hidden; }
+
+/* если подключено wow.js */
+
+/*# sourceMappingURL=style.css.map */

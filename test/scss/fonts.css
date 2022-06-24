@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Inter-Medium';
+  src: url("../fonts/Inter-Medium.ttf?#iefix") format("embedded-opentype"), url("../fonts/Inter-Medium.ttf") format("opentype"), url("../fonts/Inter-Medium.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Inter-Regular';
+  src: url("pt-sans-caption.woff2") format("woff2"), url("../fonts/Inter-Regular.ttf?#iefix") format("embedded-opentype"), url("../fonts/Inter-Regular.ttf") format("opentype"), url("../fonts/Inter-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Inter-SemiBold';
+  src: url("pt-sans-caption.woff2") format("woff2"), url("../fonts/Inter-SemiBold.ttf?#iefix") format("embedded-opentype"), url("../fonts/Inter-SemiBold.ttf") format("opentype"), url("../fonts/Inter-SemiBold.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+/*# sourceMappingURL=fonts.css.map */

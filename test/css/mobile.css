@@ -1,0 +1,146 @@
+.tags{overflow: hidden;}
+    .tags .slick-arrow{display: none !important;}
+    .tags .slick-track{display: flex;}
+    .tags .slick-list{padding: 0 !important; width: 100% !important; position: relative;}
+    .tags__item{margin-right: 0;}
+    .tags .slick-slide{margin-right: 8px;}
+@media only screen and (max-width: 1264px) {  
+    .telo-gamevendor{width:100%; padding: 0 24px;}
+    .card__img img{max-width: 100%;}
+    .header__nav-menu{padding: 0 32px}
+    #banner{width: calc(100% - 48px); padding: 0;}
+    .footer__top{padding-bottom: 56px;}
+}
+@media only screen and (max-width: 1200px) { 
+    .header__nav-menu{padding: 0 27px}
+}
+@media only screen and (max-width: 1150px) { 
+    #banner{height: 375px;}
+    .banner img{left: 390px; width: 620px;}
+}
+@media only screen and (max-width: 1100px) { 
+    .header__nav-menu{padding: 0 22.5px}
+}
+@media only screen and (max-width: 1024px) { 
+    #breadcrumbs{margin-top: 32px; margin-bottom: 20px;}
+    #text-container{margin-bottom: 16px;}
+    #text-container h1{padding-bottom: 16px;}
+    .banner__text{padding-left: 60px; width: 375px;}
+    #banner{height: 384px; background: url(../img/bg-banner.jpg) no-repeat left -83px center; background-size: cover; margin-bottom: 40px;}
+    .banner img{left: 334px; width: 606px;}
+    .filter__container{width: calc(50% - 8px);}
+    .filter__sel-all{width: calc(50% - 8px);}
+    .filter__container--search{width: calc(50% - 8px);}
+    .filter{margin-bottom: 20px;}
+    .card{width: calc(33.333% - 32px);}
+    .add-card{width: calc(33.333% - 32px);}
+    .card:hover img{transform: scale(1.085);}
+    .cards{margin-bottom: 60px;}
+}
+@media only screen and (max-width: 1023px) { 
+    .header__nav-menu{padding: 0 20.5px}
+}
+@media only screen and (max-width: 980px) { 
+    .header__nav-menu{padding: 0 16px}
+    .banner__text{padding-left: 40px; width: 320px;}
+    .banner__title{font-size: 32px; line-height: 38px; padding-bottom: 20px;}
+    #banner{overflow: hidden; height: 344px; background: url(../img/bg-banner.jpg) no-repeat left -83px center; background-size: cover;}
+    .banner img{left: 310px; width: 505px;}
+}
+@media only screen and (max-width: 900px) { 
+    .header__nav-menu{padding: 0 10.5px}
+    #banner{overflow: hidden; height: 324px; background: url(../img/bg-banner.jpg) no-repeat left -83px center; background-size: cover;}
+    .banner img{left: 280px;}
+    .footer__top{flex-wrap: wrap;}
+    .footer__text{width: 100%; margin-bottom: 32px;}
+    .footer__form{width: 100%;}
+}
+@media only screen and (max-width: 800px) { 
+    .header__nav-menu{padding: 0 8.5px}
+}
+@media only screen and (max-width: 768px) { 
+    .header__nav{display: none;}
+    .header__address{display: none;}
+    .header__small-menu{display: none;}
+    .header__middle-container{justify-content: center;}
+    .header__middle{height: 56px; border-bottom: none;}
+    .header .slick-list{line-height: 20px;}
+    .header__slider-slide{line-height: 20px; font-size: 14px;}
+    .header__nav-mobile{display: block;}
+    .header__slider .slick-prev{left:8px;}
+    .header__slider .slick-next{right:8px;}
+    .header__slider{padding: 8px 28px;}
+    .card{width: calc(50% - 32px);}
+    .add-card{width: calc(50% - 32px);}
+    .card:hover img{transform: scale(1.08);}
+    .footer{margin-bottom: 66px;}
+}
+@media only screen and (max-width: 750px) {
+    .banner__title{font-size: 28px; line-height: 32px; padding-bottom: 16px;}
+    .banner__text{width: 255px;}
+    .banner__description{padding-bottom: 24px;}
+    .banner img{left: 230px; width: 470px;}
+    #banner{height: 294px;}
+} 
+@media only screen and (max-width: 700px) {
+    #banner{background: url(../img/bg-banner.jpg) no-repeat left -140px center; background-size: cover;}
+    .banner img{width: 370px;}
+    .filter{flex-wrap: wrap;}
+    .filter__sel-all{width: 100%;}
+    .filter__container--search{width: 100%; margin-bottom: 16px;}
+    }
+@media only screen and (max-width: 600px) {
+    #banner{height: 400px; align-items: flex-start; background: url("../img/banner-mob.jpg") no-repeat center; background-size: cover;}
+    .banner img{width: 370px; left: 50%; transform: translateX(-50%); display: none;}
+    .banner__text{width: 100%; padding: 32px; height: 100%; position: relative;}
+    .banner__btn{position: absolute; bottom: 32px; left: 50%; transform: translateX(-50%);}
+    .modal-add__window{width: calc(100% - 20px); top: 20px; transform: translateX(-50%);}
+}
+@media only screen and (max-width: 500px) { 
+    .header__slider .slick-track{align-items: center;}
+    .banner__title{font-size: 24px; line-height: 28px; padding-bottom: 16px;}
+    .filter__sel-all{display: none;}
+    .filter__sel-all .filter__container{margin-top: 10px; width: 100%;}
+    .filter__mobile{display: flex; justify-content: center; align-items: center; cursor: pointer;}
+    .filter__buter{position: relative; width: 12px; border-radius: 4px; height: 2px; background: #101828; margin-right: 8px; transition: all 0.3s ease-in-out;}
+    .filter__buter::after, .filter__buter::before{content: ""; position: absolute; width: 16px; left: 50%; transform: translateX(-50%) translateY(-4px); background: #101828; border-radius: 4px; height: 2px; transition: all 0.3s ease-in-out;}
+    .filter__buter::before{transform: translateX(-50%) translateY(4px); width: 8px;}
+    .filter__mobile--open .filter__buter{transform: rotate(45deg); width: 16px;}
+    .filter__mobile--open .filter__buter::after, .filter__mobile--open .filter__buter::before{transform: translateX(-50%) rotate(-90deg); width: 16px;}
+    .card{width: calc(50% - 10px); margin: 0 5px; margin-bottom: 15px;}
+    .add-card{width: calc(50% - 10px); margin: 0 5px; margin-bottom: 15px; padding: 0 16px;}
+    .cards__all{margin-left: -5px; margin-right: -5px;}
+    .card__bottom{width: calc(100% - 24px); left: 12px;}
+    .card__info{padding: 0 12px;}
+    .pagination{display: none;}
+    .cards__btn-link{display: block; margin-top: 17px;}
+    .text__title{font-size: 24px; line-height: 28px; padding-bottom: 16px;}
+    .text__title h2{font-size: 24px; line-height: 28px;}
+    .text-center{text-align: left;}
+    .footer__menu-one{width: calc(50% - 32px); margin-bottom: 32px;}
+    .footer__menu-container{flex-wrap: wrap;}
+    .footer__top{margin-bottom: 32px; padding-bottom: 32px;}
+    .footer__menu{margin-bottom: 16px;}
+    .footer{padding-bottom: 32px; padding-top: 32px;}
+}
+@media only screen and (max-width: 400px) { 
+    .telo-gamevendor{padding: 0 20px;}
+    #banner{height: 448px; width: calc(100% - 40px); margin-bottom: 32px;}
+    .banner__btn{width: 216px;}
+    .card{width: 100%; margin: 0; margin-bottom: 16px;}
+    .add-card{width: 100%; margin: 0; margin-bottom: 16px; padding:44px;}
+    .card__bottom{width: calc(100% - 48px); left: 24px;}
+    .card__info{padding: 0 24px;}
+    .card__img{text-align: center;}
+    .footer__top{padding-bottom: 32px;}
+    .footer__form{flex-wrap: wrap;}
+    .footer__form-inp{width: 100%; margin-right: 0; margin-bottom: 8px;}
+    .footer__form-btn{width: 100%;}
+    .modal-add__container .filter__container{width: 100%; margin-bottom: 12px;}
+    .modal-add__container .modal-add__price-container{width: 100%;}
+    .modal-add__title{padding-bottom: 16px;}
+}
+@media only screen and (max-width: 320px) { 
+    #breadcrumbs{margin-top: 20px; margin-bottom: 16px;}
+    .footer__menu-one{width: 100%;}
+}
