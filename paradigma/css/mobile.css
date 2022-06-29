@@ -109,8 +109,9 @@
     .header__info-job{font-size: 7px; line-height: 9px;}
     .header__phone{font-size: 14px; line-height: 17px;}
     .header__btn{font-size: 10px; line-height: 12px;}
-    .header__logo{margin-bottom: 12px;  align-self: flex-start; width: 74px;}
+    .header__logo{ align-self: flex-start; width: 100px; margin-left: -15px;}
     .header__logo img{width: auto; max-width: 100%;}
+    .header__info{margin-left: -11px;}
     .content__right-questions{font-size: 8px; line-height: 12px; width: 170px;}
     .content__right h1{font-size: 18px; line-height: 30px; width: 270px;}
     .popup__window, .popup__final{width: calc(100% - 20px); padding: 30px;}
