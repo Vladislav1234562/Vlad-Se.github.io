@@ -40,7 +40,7 @@
     .header__logo{margin-right: 22px;}
     .header__logo img{width: 135px;}
     .content__left{width: 225px; border-radius:0 0 20px 20px; margin-top: 63px;}
-    .content__left::after{top: -73px; height: 73px;}
+    .content__left::after{top: -73px; height: 73px; width: calc(100% + 20px);}
     .content__right{width: calc(100% - 296px);}
     .content__left-item{font-size: 14px; line-height: 15px; padding: 0 30px; padding-bottom: 48px;}
     .content__left-item::before{transform: translateX(-30px); background: url(../img/menu_bg.png) no-repeat bottom -24px left 15px; background-size: 100%;}
