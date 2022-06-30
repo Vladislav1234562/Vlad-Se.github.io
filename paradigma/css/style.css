@@ -109,8 +109,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  margin-bottom: 2.71vw;
+  align-items: flex-start;
 }
 .header__nav {
   border-bottom: 0.05vw solid rgba(28, 28, 28, 0.07);
@@ -161,6 +160,7 @@ img {
   line-height: 1.56vw;
   text-align: center;
   width: 10.78vw;
+  margin-top: 1.46vw;
 }
 .header__description p {
   line-height: 0.94vw;
@@ -175,6 +175,7 @@ img {
   display: flex;
   align-items: center;
   cursor: pointer;
+  margin-top: 2.86vw;
 }
 .header__load-icon {
   display: flex;
@@ -205,6 +206,7 @@ img {
 }
 .header__messangers {
   text-align: center;
+  margin-top: 1.56vw;
 }
 .header__messangers-descriprion {
   padding-left: 0.42vw;
@@ -277,6 +279,7 @@ img {
 }
 .header__info {
   text-align: center;
+  margin-top: 1.88vw;
 }
 .header__info-job {
   margin-bottom: 0.31vw;
@@ -313,6 +316,7 @@ img {
 .content {
   display: flex;
   justify-content: space-between;
+  margin-top: -25px;
 }
 .content__left {
   background-color: var(--white);
@@ -375,7 +379,7 @@ img {
   padding-bottom: 0.99vw;
   font-weight: normal;
   width: 33.59vw;
-  text-align: center;
+  text-align: left;
 }
 .content__right h1 span {
   font-family: MontserratSemiBold;

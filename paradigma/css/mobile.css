@@ -2,14 +2,15 @@
     .bg{height: 100%; width: 100%; background: url(../img/mobile_bg.png) no-repeat bottom right 0px; background-size: 100%;}
     .container{width: 100%; padding: 0px 22px;}
     body{font-size: 14px; line-height: 22px; background-color: #EDF2F5;}
-    .header{height: auto;}
+    .header{height: auto; align-items: center; margin-bottom: 34px;}
     .header__nav{order: 1; display: none; border: none;}
     .header__description{order: 2; display: none; font-size: 8px; line-height: 14px; margin-bottom: 16px; width: 200px; margin: 0 auto;}
     .header__description p{line-height: 14px; display: inline;}
-    .header__load{order: 3; display: none; width: 100%; justify-content: center; margin-bottom: 16px;}
+    .header__load{order: 3; display: none; width: 100%; justify-content: center; margin-bottom: 16px; margin-top: 0;}
     .header__load-text{font-size: 10px; line-height: 12px; border-bottom: 2px dotted var(--green); padding-bottom: 4px;}
     .header__load-icon{width: 43px; height: 43px; font-size: 11px; line-height: 13px; margin-right: 18px;}
-    .header__messangers{order: 4; display: none; width: 100%;}
+    .header__info{margin-top: 0;}
+    .header__messangers{order: 4; display: none; width: 100%; margin-top: 0;}
     .header__messangers-descriprion{font-size: 8px; line-height: 10px; margin-bottom: 11px; padding-left: 8px; display: inline-block;}
     .header__messangers-descriprion::after{width: 4px; height: 4px;}
     .header__messangers-list{margin-top: 0; justify-content: center;}
@@ -37,8 +38,10 @@
     .header__nav-item:last-child{margin-right: 0;}.header__info-job{font-size: 11px; line-height: 15px; padding-top: 10px;}
     .header__phone{font-size: 22px; line-height: 24px;}
     .header__btn{font-size: 12px; line-height: 15px;}
-    .header__logo{margin-right: 22px;}
+    .header__logo{margin-right: 22px; padding-top: 15px; position: relative;}
+    .header__logo::after{content: ""; height: 15px; position: absolute; top: 0; left: 18px; width: calc(100% - 36px); z-index: -1; box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.03); background-color: var(--white);}
     .header__logo img{width: 135px;}
+    .content{margin-top: 0;}
     .content__left{width: 225px; border-radius:0 0 20px 20px; margin-top: 63px;}
     .content__left::after{top: -73px; height: 73px; width: calc(100% + 20px);}
     .content__right{width: calc(100% - 296px);}
@@ -46,10 +49,10 @@
     .content__left-item::before{transform: translateX(-30px); background: url(../img/menu_bg.png) no-repeat bottom -24px left 15px; background-size: 100%;}
     .content__right h1{font-size: 28px; line-height: 40px; width: 355px; padding-bottom: 10px;}
     .content__right-description{font-size: 18px; line-height: 20px; margin-bottom: 23px; background-size: 37px; padding-left: 45px;}
-    .content__right-kalculate{background: url(../img/arrow.svg) no-repeat right 32px center var(--green); background-size: 15px; padding-left: 30px; padding-right: 80px; width: 276px; height: 60px; font-size: 10px; line-height: 16px;}
-    .content__right-look{background: url(../img/arrow.svg) no-repeat right 32px center var(--orange); background-size: 15px; padding-left: 50px; padding-right: 90px; width: 276px; height: 60px; font-size: 10px; line-height: 16px;}
-    .content__right-kalculate:hover{background: url(../img/arrow.svg) no-repeat right 32px center #21e27c;  background-size: 15px;}
-    .content__right-look:hover{background: url(../img/arrow.svg) no-repeat right 32px center #fd9c49;  background-size: 15px;}
+    .content__right-kalculate{background: url(../img/arrow.svg) no-repeat right 52px center var(--green); background-size: 15px; padding-left: 30px; padding-right: 80px; width: 276px; height: 60px; font-size: 10px; line-height: 16px;}
+    .content__right-look{background: url(../img/arrow.svg) no-repeat right 52px center var(--orange); background-size: 15px; padding-left: 50px; padding-right: 90px; width: 276px; height: 60px; font-size: 10px; line-height: 16px;}
+    .content__right-kalculate:hover{background: url(../img/arrow.svg) no-repeat right 52px center #21e27c;  background-size: 15px;}
+    .content__right-look:hover{background: url(../img/arrow.svg) no-repeat right 52px center #fd9c49;  background-size: 15px;}
     .content__right-questions{font-size: 12px; line-height: 14px; width: 225px; background-size: 13px; padding-left: 20px; margin-top: 20px;}
     .popup__window, .popup__final{width: 530px; padding: 50px;}
     .popup__title{font-size: 22px; line-height: 24px; padding-bottom: 20px;}
@@ -76,10 +79,11 @@
     .content{margin-top: 34px; flex-direction: column; align-items: center;}
     .content__left{order: 1; width: 200px; height: 53px; border-radius: 0; margin-top: 56px; position: fixed; bottom: 0;}
     .content__left-item{display: none; padding-bottom: 0;}
+    .content__left-item::before{background: none;}
     .content__left-item:nth-child(3){display: block; position: absolute; top: -30px; left: 23px; font-size: 10px; text-align: left; line-height: 15px; width: 102px; padding: 0; z-index: 1;}
     .content__left::after{ background-size: 100%; height: 66px; top: -65px; width: 218px; left: -9px;}
     .content__right{width: 100%; display: flex; flex-direction: column; align-items: center; margin-bottom: 69px;}
-    .content__right h1{width: 100%; padding-bottom: 0;}
+    .content__right h1{width: 100%; padding-bottom: 0; text-align: center;}
     .content__right-btns{flex-direction: column; order: 1;}
     .content__right-description{margin-bottom: 17px; font-size: 13px; line-height: 16px; margin-top: 5px;}
     .content__right-questions{margin-top: 0; margin-bottom: 12px; width: 100%; padding-left: 0; padding-top: 16px; background: url(../img/questions.svg) no-repeat top center; background-size: 13px; width: 220px;}
@@ -109,7 +113,8 @@
     .header__info-job{font-size: 7px; line-height: 9px;}
     .header__phone{font-size: 14px; line-height: 17px;}
     .header__btn{font-size: 10px; line-height: 12px;}
-    .header__logo{ align-self: flex-start; width: 100px; margin-left: -15px;}
+    .header__logo{ align-self: flex-start; width: 100px; margin-left: -15px; padding-top: 12px;}
+    .header__logo::after{height: 12px; left: 13px; width: calc(100% - 26px);}
     .header__logo img{width: auto; max-width: 100%;}
     .header__info{margin-left: -11px;}
     .content__right-questions{font-size: 8px; line-height: 12px; width: 170px;}
