@@ -175,7 +175,7 @@ img {
   display: flex;
   align-items: center;
   cursor: pointer;
-  margin-top: 2.86vw;
+  margin-top: 2.6vw;
 }
 .header__load-icon {
   display: flex;
@@ -423,7 +423,7 @@ img {
 .content__right-look {
   outline: none;
   border: none;
-  background: url("../img/arrow.svg") no-repeat right 2.97vw center var(--orange);
+  background: url("../img/arrow.svg") no-repeat right 2.45vw center var(--orange);
   background-size: 1.09vw;
   transition: background .2s ease-in-out;
   color: var(--white);
@@ -442,7 +442,7 @@ img {
   cursor: pointer;
 }
 .content__right-look:hover {
-  background: url("../img/arrow.svg") no-repeat right 2.97vw center #FD9C49;
+  background: url("../img/arrow.svg") no-repeat right 2.45vw center #FD9C49;
   background-size: 1.09vw;
 }
 .content__right-questions {
