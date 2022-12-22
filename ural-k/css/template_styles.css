@@ -1,0 +1,11 @@
+.gallary_item {
+    position: relative;
+    display: table-footer-group;
+    float: left !important;
+    width: 20%;
+    margin: 5px;
+}
+.col-md-6.col-sm-12 .gallary .gallary_item {
+    width: 250px !important;
+    height: 360px !important;
+}

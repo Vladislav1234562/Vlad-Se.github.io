@@ -1,0 +1,114 @@
+/*
+CUSTOM CSS CODE
+*/
+
+.ct-favorite.active svg,
+.btn-favorite.active svg{
+    fill: #c20a0a;
+}
+.fltr-item.selected a{
+    color: #c20a0a;
+}
+.js_cat_selector{
+    cursor: pointer;
+}
+
+.select-modal-confirm{
+    display: none;
+    position: absolute;
+    background: #c4c4c4;
+    color: white;
+    padding: 12px 20px;
+    min-width: 220px;
+    max-width: 100%;
+    right: 0;
+}
+.select-modal-confirm-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.select-modal-confirm-footer .cs_yes,
+.select-modal-confirm-footer .cs_no{
+    padding: 4px 16px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+.select-modal-confirm-footer .cs_no{
+    background: #c20a0a;
+}
+.tm-box ul.prop-list{
+    width: 100%;
+}
+
+.ct-list:not(.cl-list) .ct-box-img img{
+    object-fit: cover !important;
+}
+.ct-box-img{
+    /* box-shadow: unset;
+    -webkit-box-shadow: unset; */
+}
+
+.ct-list.custom .ct-name{
+    font-size: 2.4rem;
+}
+.ct-list.custom .ct-price{
+    font-size: 3.2rem;
+}
+
+ul.custom > li .br-box{
+    display: block;
+}
+
+.tm-it-main{
+    padding-right: 80px;
+}
+.bg-map{
+    top: unset !important;
+    left: unset !important;
+    width: 100%;
+    margin-top: -390px !important;
+}
+.ed-middle{
+    width: 62%;
+}
+.ed-md-col-r{
+    -webkit-box-flex: unset;
+    -ms-flex-positive: unset;
+    flex-grow: unset;
+    width: 1px;
+    position: absolute;
+    right: 82px;
+}
+.ed-bottom-l{
+    -webkit-box-flex: unset;
+    -ms-flex-positive: unset;
+    flex-grow: unset;
+    width: 41%;
+}
+.ed-bottom-r{
+        -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 50%;
+    position: relative;
+}
+
+
+
+@media screen and (min-width: 992px){
+    .ed-wrp.ed-type2 .ed-md-col-l {
+        width: 98%;
+    }
+    .ed-wrp.ed-type2 .mp-caption {
+        font-size: 3.6rem;
+        font-weight: 300;
+        margin-top: -114px;
+        width: 100%;
+        min-width: 350px;
+    }
+}
+@media screen and (max-width: 576px){
+    .tm-it-main{
+        padding-right: 0;
+    }
+}

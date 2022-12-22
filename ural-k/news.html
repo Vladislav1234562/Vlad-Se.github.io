@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<title>Sitename</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+	<link href="css/slick.css" rel="stylesheet">
+	<link href="css/jquery.fancybox.min.css" rel="stylesheet">
+	<link href="css/main.css" rel="stylesheet">
+	<script>
+		let vh = window.innerHeight * 0.01,
+			current_width = window.innerWidth;
+		document.documentElement.style.setProperty('--vh', vh + 'px');
+		window.addEventListener('resize', function() {
+			if (window.matchMedia('(max-width: 991px)').matches) {
+				if (window.innerWidth == current_width) return false;
+			}
+			current_width = window.innerWidth;
+			document.documentElement.style.setProperty('--vh', (window.innerHeight * 0.01) + 'px');
+		});
+
+	</script>
+	<script>
+		window.MSInputMethodContext && document.documentMode && document.write('<script src="https://cdn.jsdelivr.net/gh/nuxodin/ie11CustomProperties@4.1.0/ie11CustomProperties.min.js"><\/script>');
+
+	</script>
+</head>
+
+<body>
+	<svg style="display: none;">
+		<symbol id="heard" viewBox="0 0 160 160">
+			<path d="m74.8364 151.219c-2.4737-1.89-5.1887-4.071-8.2054-6.522-8.7114-7.168-17.0072-14.823-24.8475-22.926-17.7482-18.364-30.1669-36.5391-34.79248-53.7935-1.28784-4.668-1.95718-9.4833-1.99102-14.3237 0-44.84166 42.3242-65.7571 74.9749-30.9881 32.7911-34.739 75.0251-15.00385 75.0251 31.0081-.038 4.8349-.714 9.6439-2.011 14.3037-4.616 17.2544-17.044 35.4395-34.783 53.7935-7.832 8.108-16.124 15.762-24.837 22.926-2.9664 2.441-5.7217 4.632-8.2054 6.522-1.4983 1.14-2.5743 1.931-3.1575 2.351l-2.0111 1.43-2.0011-1.43c-.5832-.42-1.6592-1.211-3.1575-2.351z" />
+		</symbol>
+	</svg>
+	<div class="site-wrapper">
+		<header class="header">
+			<div class="crooked-container">
+				<div class="h-flex">
+					<div class="h-item h-nav-btn-wrp">
+						<a href="#" class="nav-btn"><span></span></a>
+					</div>
+					<!-- <div class="h-item h-logo-wrp">
+						<a href="#" class="logo">
+							<span class="logo-img">
+								<img src="img/logo-img.svg" alt="">
+							</span>
+							<span class="logo-text">
+								<img src="img/logo-text.svg" alt="">
+							</span>
+						</a>
+					</div> -->
+					<div class="h-item h-search-wrp">
+						<form action="#" class="h-search" method="post">
+							<input type="search" name="textfield" placeholder="Поиск по сайту">
+							<button type="submit"><i class="icon-search"></i></button>
+						</form>
+					</div>
+					<div class="h-item h-tel-wrp">
+						<a href="tel:+79000000000" class="h-tel">+7 (900) 000 - 00 - 00</a>
+					</div>
+					<div class="h-item h-btn-wrp">
+						<a href="#callback" data-modal class="btn">ЗАКАЗАТЬ ЗВОНОК</a>
+					</div>
+					<div class="h-item h-select-wrp">
+						<div class="custom-select placeholder">
+							<a href="#" class="c-select-title"><i class="icon-place"></i><span>Выбор региона</span></a>
+							<div class="c-select-drop-down">
+								<div class="c-select-scroll">
+									<ul class="c-select-list custom">
+										<li><a href="#" data-val="value1">Екатеринбург</a></li>
+										<li><a href="#" data-val="value2">Челябинск</a></li>
+										<li><a href="#" data-val="value3">Тюмень</a></li>
+										<li><a href="#" data-val="value4">Уфа</a></li>
+										<li><a href="#" data-val="value5">Пермь</a></li>
+									</ul>
+								</div>
+							</div>
+							<!--current value-->
+							<input type="hidden" name="textfield">
+						</div>
+					</div>
+					<div class="h-item h-favorite-wrp">
+						<a href="#" class="h-favorite active">
+							<svg height="30px" width="30px">
+								<use xlink:href="#heard" />
+							</svg>
+							<span>05</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</header>
+		<main class="content">
+			<div class="crooked-container">
+				<div class="content-flex">
+					<aside class="aside">
+						<div class="as-scroll">
+							<div class="as-wrp">
+								<div class="as-wr-top">
+									<a href="#" class="logo">
+										<span class="logo-img">
+											<img src="img/logo-img.svg" alt="">
+										</span>
+										<span class="logo-text">
+											<img src="img/logo-text.svg" alt="">
+										</span>
+									</a>
+								</div>
+								<div class="as-wr-center">
+									<ul class="nav-list custom">
+										<li><a href="#">О компании</a></li>
+										<li><a href="#">Каталог</a></li>
+										<li><a href="#">Бренды</a></li>
+										<li><a href="#">Новинки</a></li>
+										<li><a href="#">Команда</a></li>
+										<li><a href="#">Новости</a></li>
+										<li><a href="#">Контакты</a></li>
+									</ul>
+								</div>
+								<div class="as-wr-bottom">
+									Фактический адрес <br>
+									<a href="mailto:op-manager3@tdural-k.ru">op-manager3@tdural-k.ru</a> <br>
+									<a href="tel:+73430000000">+7 (343) 000-00-00</a>
+								</div>
+
+								<div class="padding-container">
+									<a href="#" class="close-aside">&times;</a>
+									<ul class="social-list custom">
+										<li>
+											<a href="#">
+												<svg height="21" viewBox="0 0 140 140" width="21" xmlns="http://www.w3.org/2000/svg">
+													<path d="m46.67 35.55c1.5-2.15 3.42-4.47 6.31-4.41 8.01-.17 16.06-.23 24.07.02 2.74-.01 4.45 2.59 4.58 5.09.56 9.27-.25 18.58.39 27.84-.03 2.61 2.09 4.21 3.95 5.63 8.68-6.61 13.61-16.8 18.18-26.44 1.75-3.17 2.15-7.87 5.85-9.42 5.96-.64 11.98-.06 17.96-.26 4.07.16 8.77-.83 12.04 2.23v1.97c-2.97 11.02-11.4 19.28-17.72 28.44-2.4 3.47-7.11 7.89-3.96 12.29 6.78 7.96 15.95 14.09 20.81 23.59 1.49 2.5.83 6.74-2.34 7.46-5.24.51-10.51.04-15.77.2-4.9-.07-10.31.72-14.6-2.25-5.65-3.9-9.25-9.99-14.45-14.38-1.73-1.48-4.58-2.73-6.45-.75-3.62 3.88-2.95 9.5-3.92 14.3-.75 2.84-4.16 2.99-6.56 3.09-11.99.67-24.39-2.37-33.94-9.86-7.08-5.28-12.57-12.32-17.53-19.54-7.75-11.35-14.27-23.51-19.96-36.02-1.04-2.37-2.06-4.77-3.61-6.86v-1.29c1.41-1.26 2.94-2.75 5-2.52 6.67-.11 13.36-.22 20.03.06 3.13-.01 4.76 2.99 5.81 5.49 3.69 8.81 8.25 17.28 13.9 24.99 1.61 2.2 3.54 4.38 6.25 5.18 2.22-.09 3.25-2.57 3.66-4.43 1.13-6.26 1.21-12.68.55-18.99-.32-2.41-.43-5.07-2.08-7.03-1.57-2-4.23-2.49-6.45-3.42z" fill="#4d4d4d" />
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg height="21" viewBox="0 0 140 140" width="21" xmlns="http://www.w3.org/2000/svg">
+													<path d="m57.09 20.86c2.85-10.84 12.88-19.24 24.02-20.17 8.34-.01 16.68-.04 25.01.04.63 7.42.24 14.91.18 22.35-6.04.63-12.2-.43-18.19.76-3.54.65-6.3 3.69-6.6 7.29-.93 6.58-.16 13.28-.48 19.91 8.23.29 16.47-.17 24.69.26-.2 8.14-.13 16.3-.06 24.44-8.2.31-16.4-.12-24.59.21-.06 21.06.14 42.12-.15 63.17-8.38.44-16.78.18-25.16.1-.5-21.1.03-42.23-.27-63.33-7.14-.12-14.28-.04-21.43-.04-.07-8.23-.14-16.47.04-24.7 7.07-.09 14.13.06 21.2-.09.54-10.06-.9-20.35 1.79-30.2z" fill="#4d4d4d" />
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg height="21" viewBox="0 0 140 140" width="21" xmlns="http://www.w3.org/2000/svg">
+													<path d="m7.58 3.38c41.76-.02 83.52.04 125.28-.03 3.97 3.18 6.63 7.8 7.14 12.9v107.09c-.46 5.08-3.1 9.66-6.98 12.9-41.77.06-83.55-.08-125.32.07-4.7-3.62-7.38-9.4-7.19-15.34-.03-31.99.01-63.98-.02-95.98.03-4.92-.4-10.1 1.67-14.72 1.15-2.75 3.32-4.86 5.42-6.89m91.75 12.9c-2.13 1.03-3.51 3.32-3.44 5.68-.06 5.04-.09 10.1.02 15.14-.02 3.19 2.84 6.1 6.05 6.01 5.36.1 10.74.1 16.1 0 3.72.13 6.43-3.55 6.15-7.07-.15-5.31.43-10.69-.35-15.95-.93-3.9-5.35-4.93-8.83-4.52-5.2.39-10.67-.78-15.7.71m-36.99 27.25c-10.84 3.05-19.48 13.19-19.87 24.58-.78 10.75 5.91 21.28 15.6 25.76 11.38 5.61 26.36 2.46 34.29-7.51 6.8-8.08 7.99-20.3 2.8-29.51-6.03-11.47-20.53-17-32.82-13.32m-46.22 15.61c.01 19.65-.07 39.29.04 58.94-.19 3.12 2.76 5.72 5.81 5.44 32 .04 64.01 0 96.02.02 3.58.43 6.71-2.92 6.3-6.45-.01-19.32 0-38.64-.01-57.95-4.06-.01-8.13 0-12.2-.03 1.34 5.6 2.26 11.4 1.29 17.14-1.51 12.94-9.76 24.65-21.05 31.01-11.5 6.58-25.99 7.56-38.28 2.64-10.84-4.22-19.87-13-24.09-23.87-3.41-8.51-3.74-18.15-1.13-26.91-4.23.02-8.47.01-12.7.02z" fill="#4d4d4d" />
+												</svg>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<svg height="21" viewBox="0 0 140 140" width="21" xmlns="http://www.w3.org/2000/svg">
+													<path d="m3.39 19.41c4.09-9.22 12.68-16.35 22.57-18.45 4.59-1.1 9.34-.82 14.02-.84 22.34.01 44.67 0 67 0 8.18-.03 16.37 2.94 22.37 8.53 6.28 5.56 9.98 13.66 10.65 21.98v79.2c-1.12 10.79-7.58 20.97-17.3 25.96-6.57 3.74-14.33 3.92-21.67 4.21h-66.58c-7.29-.56-14.78-2.19-20.68-6.76-8.3-5.99-13.24-16.07-13.24-26.27-.08-23.98.01-47.97-.05-71.96-.01-5.31.65-10.74 2.91-15.6m45 21.05c-3.43 1.25-4.82 5.15-4.68 8.54.01 14.68-.14 29.36.05 44.04.03 5.25 6.66 8.38 11 5.75 13.83-7.14 27.63-14.36 41.42-21.59 3.5-1.47 6.06-5.38 4.87-9.2-.57-2.47-2.72-4.07-4.83-5.21-13.03-6.98-26.12-13.88-39.14-20.87-2.62-1.34-5.78-2.86-8.69-1.46z" fill="#4d4d4d" />
+												</svg>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</aside>
+					<div class="content-col">
+						<h1>Новости</h1>
+						<ul class="custom breadcrumb">
+							<li><a href="#">Главная</a></li>
+							<li><span>Новости</span></li>
+						</ul>
+
+
+						<ul class="ct-list custom">
+							<li>
+								<div class="ct-box">
+									<a href="#" class="ct-box-img">
+										<img src="img/temp/img1.jpg" alt="">
+									</a>
+									<div class="ct-main">
+										<div class="ct-main-content">
+											<time datetime="2021-01-01">01.01.2021</time>
+											<a href="#" class="ct-name">
+												Название новости
+											</a>
+										</div>
+										<div class="ct-main-bottom">
+											<a href="#" class="btn btn-border">ПОДРОБНЕЕ</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="ct-box">
+									<a href="#" class="ct-box-img">
+										<img src="img/temp/img2.jpg" alt="">
+									</a>
+									<div class="ct-main">
+										<div class="ct-main-content">
+											<time datetime="2021-01-01">01.01.2021</time>
+											<a href="#" class="ct-name">
+												Название новости
+											</a>
+										</div>
+										<div class="ct-main-bottom">
+											<a href="#" class="btn btn-border">ПОДРОБНЕЕ</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="ct-box">
+									<a href="#" class="ct-box-img">
+										<img src="img/temp/img3.jpg" alt="">
+									</a>
+									<div class="ct-main">
+										<div class="ct-main-content">
+											<time datetime="2021-01-01">01.01.2021</time>
+											<a href="#" class="ct-name">
+												Название новости
+											</a>
+										</div>
+										<div class="ct-main-bottom">
+											<a href="#" class="btn btn-border">ПОДРОБНЕЕ</a>
+										</div>
+									</div>
+								</div>
+							</li>
+
+							<li>
+								<div class="ct-box">
+									<a href="#" class="ct-box-img">
+										<img src="img/temp/img1.jpg" alt="">
+									</a>
+									<div class="ct-main">
+										<div class="ct-main-content">
+											<time datetime="2021-01-01">01.01.2021</time>
+											<a href="#" class="ct-name">
+												Название новости
+											</a>
+										</div>
+										<div class="ct-main-bottom">
+											<a href="#" class="btn btn-border">ПОДРОБНЕЕ</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="ct-box">
+									<a href="#" class="ct-box-img">
+										<img src="img/temp/img2.jpg" alt="">
+									</a>
+									<div class="ct-main">
+										<div class="ct-main-content">
+											<time datetime="2021-01-01">01.01.2021</time>
+											<a href="#" class="ct-name">
+												Название новости
+											</a>
+										</div>
+										<div class="ct-main-bottom">
+											<a href="#" class="btn btn-border">ПОДРОБНЕЕ</a>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="ct-box">
+									<a href="#" class="ct-box-img">
+										<img src="img/temp/img3.jpg" alt="">
+									</a>
+									<div class="ct-main">
+										<div class="ct-main-content">
+											<time datetime="2021-01-01">01.01.2021</time>
+											<a href="#" class="ct-name">
+												Название новости
+											</a>
+										</div>
+										<div class="ct-main-bottom">
+											<a href="#" class="btn btn-border">ПОДРОБНЕЕ</a>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+
+						<div class="pagination">
+							<a href="#" class="pg-btn">назад</a>
+							<ul class="pg-list-custom custom">
+								<li class="active"><a href="#">1</a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+							</ul>
+							<a href="#" class="pg-btn">вперёд</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="normal-container">
+				<div class="f-flex">
+					<div class="f-col-l">
+						<div class="f-info">
+							<div class="fi-col-l">
+								<a href="#" class="f-logo">
+									<span class="f-logo-img">
+										<img src="img/logo-img.svg" alt="">
+									</span>
+									<span class="f-logo-text">
+										<img src="img/logo-text.svg" alt="">
+									</span>
+									<span class="f-logo-subtext">
+										<img src="img/logo-subtext.svg" alt="">
+									</span>
+								</a>
+							</div>
+							<div class="fi-col-r">
+								<p>
+									г. Екатеринбург, ул. Бахчиванджи, 2 стр. С8, 2 этаж
+								</p>
+								<p>
+									<a href="tel:+73430000000">+7 (343) 000 - 00 - 00</a>
+								</p>
+								<p>
+									<a href="mailto:op-manager3@tdural-k.ru">op-manager3@tdural-k.ru</a>
+								</p>
+								<p>
+									Режим работы: <br>
+									ПН - ВС
+									&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+									9:00 - 18:00
+								</p>
+							</div>
+						</div>
+						<a href="#">Посмотреть на карте</a>
+					</div>
+					<div class="f-col-r">
+						<ul class="f-nav-list custom">
+							<li class="f-catalog">
+								<span class="fn-caption">Каталог:</span>
+								<ul class="custom">
+									<li><a href="#">Керамическая плитка</a></li>
+									<li><a href="#">Керамическая плитка</a></li>
+									<li><a href="#">Керамогранит</a></li>
+									<li><a href="#">Интерьерные панели</a></li>
+									<li><a href="#">Сухие смеси</a></li>
+									<li><a href="#">Торговое оборудование</a></li>
+								</ul>
+							</li>
+							<li>
+								<span class="fn-caption">Полезное:</span>
+								<ul class="custom">
+									<li><a href="#">Каталог</a></li>
+									<li><a href="#">Новинки</a></li>
+									<li><a href="#">Бренды</a></li>
+									<li><a href="#">Сертификаты</a></li>
+								</ul>
+							</li>
+							<li>
+								<span class="fn-caption">Помощь и сервисы:</span>
+								<ul class="custom">
+									<li><a href="#">О компании</a></li>
+									<li><a href="#">Новости</a></li>
+									<li><a href="#">Вакансии</a></li>
+									<li><a href="#">Контакты</a></li>
+								</ul>
+							</li>
+						</ul>
+						<div class="f-social">
+							<ul class="social-list custom">
+								<li>
+									<a href="#">
+										<svg height="21" viewBox="0 0 140 140" width="21" xmlns="http://www.w3.org/2000/svg">
+											<path d="m46.67 35.55c1.5-2.15 3.42-4.47 6.31-4.41 8.01-.17 16.06-.23 24.07.02 2.74-.01 4.45 2.59 4.58 5.09.56 9.27-.25 18.58.39 27.84-.03 2.61 2.09 4.21 3.95 5.63 8.68-6.61 13.61-16.8 18.18-26.44 1.75-3.17 2.15-7.87 5.85-9.42 5.96-.64 11.98-.06 17.96-.26 4.07.16 8.77-.83 12.04 2.23v1.97c-2.97 11.02-11.4 19.28-17.72 28.44-2.4 3.47-7.11 7.89-3.96 12.29 6.78 7.96 15.95 14.09 20.81 23.59 1.49 2.5.83 6.74-2.34 7.46-5.24.51-10.51.04-15.77.2-4.9-.07-10.31.72-14.6-2.25-5.65-3.9-9.25-9.99-14.45-14.38-1.73-1.48-4.58-2.73-6.45-.75-3.62 3.88-2.95 9.5-3.92 14.3-.75 2.84-4.16 2.99-6.56 3.09-11.99.67-24.39-2.37-33.94-9.86-7.08-5.28-12.57-12.32-17.53-19.54-7.75-11.35-14.27-23.51-19.96-36.02-1.04-2.37-2.06-4.77-3.61-6.86v-1.29c1.41-1.26 2.94-2.75 5-2.52 6.67-.11 13.36-.22 20.03.06 3.13-.01 4.76 2.99 5.81 5.49 3.69 8.81 8.25 17.28 13.9 24.99 1.61 2.2 3.54 4.38 6.25 5.18 2.22-.09 3.25-2.57 3.66-4.43 1.13-6.26 1.21-12.68.55-18.99-.32-2.41-.43-5.07-2.08-7.03-1.57-2-4.23-2.49-6.45-3.42z" fill="#4d4d4d" />
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg height="21" viewBox="0 0 140 140" width="21" xmlns="http://www.w3.org/2000/svg">
+											<path d="m57.09 20.86c2.85-10.84 12.88-19.24 24.02-20.17 8.34-.01 16.68-.04 25.01.04.63 7.42.24 14.91.18 22.35-6.04.63-12.2-.43-18.19.76-3.54.65-6.3 3.69-6.6 7.29-.93 6.58-.16 13.28-.48 19.91 8.23.29 16.47-.17 24.69.26-.2 8.14-.13 16.3-.06 24.44-8.2.31-16.4-.12-24.59.21-.06 21.06.14 42.12-.15 63.17-8.38.44-16.78.18-25.16.1-.5-21.1.03-42.23-.27-63.33-7.14-.12-14.28-.04-21.43-.04-.07-8.23-.14-16.47.04-24.7 7.07-.09 14.13.06 21.2-.09.54-10.06-.9-20.35 1.79-30.2z" fill="#4d4d4d" />
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg height="21" viewBox="0 0 140 140" width="21" xmlns="http://www.w3.org/2000/svg">
+											<path d="m7.58 3.38c41.76-.02 83.52.04 125.28-.03 3.97 3.18 6.63 7.8 7.14 12.9v107.09c-.46 5.08-3.1 9.66-6.98 12.9-41.77.06-83.55-.08-125.32.07-4.7-3.62-7.38-9.4-7.19-15.34-.03-31.99.01-63.98-.02-95.98.03-4.92-.4-10.1 1.67-14.72 1.15-2.75 3.32-4.86 5.42-6.89m91.75 12.9c-2.13 1.03-3.51 3.32-3.44 5.68-.06 5.04-.09 10.1.02 15.14-.02 3.19 2.84 6.1 6.05 6.01 5.36.1 10.74.1 16.1 0 3.72.13 6.43-3.55 6.15-7.07-.15-5.31.43-10.69-.35-15.95-.93-3.9-5.35-4.93-8.83-4.52-5.2.39-10.67-.78-15.7.71m-36.99 27.25c-10.84 3.05-19.48 13.19-19.87 24.58-.78 10.75 5.91 21.28 15.6 25.76 11.38 5.61 26.36 2.46 34.29-7.51 6.8-8.08 7.99-20.3 2.8-29.51-6.03-11.47-20.53-17-32.82-13.32m-46.22 15.61c.01 19.65-.07 39.29.04 58.94-.19 3.12 2.76 5.72 5.81 5.44 32 .04 64.01 0 96.02.02 3.58.43 6.71-2.92 6.3-6.45-.01-19.32 0-38.64-.01-57.95-4.06-.01-8.13 0-12.2-.03 1.34 5.6 2.26 11.4 1.29 17.14-1.51 12.94-9.76 24.65-21.05 31.01-11.5 6.58-25.99 7.56-38.28 2.64-10.84-4.22-19.87-13-24.09-23.87-3.41-8.51-3.74-18.15-1.13-26.91-4.23.02-8.47.01-12.7.02z" fill="#4d4d4d" />
+										</svg>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<svg height="21" viewBox="0 0 140 140" width="21" xmlns="http://www.w3.org/2000/svg">
+											<path d="m3.39 19.41c4.09-9.22 12.68-16.35 22.57-18.45 4.59-1.1 9.34-.82 14.02-.84 22.34.01 44.67 0 67 0 8.18-.03 16.37 2.94 22.37 8.53 6.28 5.56 9.98 13.66 10.65 21.98v79.2c-1.12 10.79-7.58 20.97-17.3 25.96-6.57 3.74-14.33 3.92-21.67 4.21h-66.58c-7.29-.56-14.78-2.19-20.68-6.76-8.3-5.99-13.24-16.07-13.24-26.27-.08-23.98.01-47.97-.05-71.96-.01-5.31.65-10.74 2.91-15.6m45 21.05c-3.43 1.25-4.82 5.15-4.68 8.54.01 14.68-.14 29.36.05 44.04.03 5.25 6.66 8.38 11 5.75 13.83-7.14 27.63-14.36 41.42-21.59 3.5-1.47 6.06-5.38 4.87-9.2-.57-2.47-2.72-4.07-4.83-5.21-13.03-6.98-26.12-13.88-39.14-20.87-2.62-1.34-5.78-2.86-8.69-1.46z" fill="#4d4d4d" />
+										</svg>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<div class="m-footer-bottom">
+				<div class="normal-container">
+					<div class="m-footer-bottom-wrp">
+						<a href="#" class="ct-favorite">
+							<svg height="51px" width="51px">
+								<use xlink:href="#heard" />
+							</svg>
+						</a>
+						<div class="module">
+							<!--Без понятия что это...-->
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<div id="callback" class="modal" style="display: none;">
+		<form action="#" class="m-form validation">
+			<div class="m-form-item">
+				<input type="text" autocomplete="off" data-parsley-errors-messages-disabled="" required="" name="textfield" placeholder="ФИО">
+			</div>
+			<div class="m-form-item">
+				<input type="tel" data-parsley-pattern="\+[0-9]\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}" data-parsley-errors-messages-disabled="" required="" name="textfield" placeholder="+7 (___) ___-__-__">
+			</div>
+			<div class="m-form-item">
+				<label class="in def">
+					<input type="checkbox" checked name="checkbox" data-parsley-required="true" data-parsley-trigger="click" data-parsley-errors-messages-disabled="">
+					<span class="in-ps">
+						<i class="in-ico"></i>
+						<span class="in-lbl">
+							Я согласен на обработку персональных данных
+							<a href="#">Конфиденциальность / Условия использования</a>
+						</span>
+					</span>
+				</label>
+			</div>
+			<div class="m-form-item text-center">
+				<input type="submit" value="ЗАКАЗАТЬ ЗВОНОК" class="btn" name="button">
+			</div>
+		</form>
+	</div>
+
+
+
+
+	<script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/jquery.inputmask.bundle.min.js"></script>
+	<script src="js/ofi.min.js"></script>
+	<script src="js/parsley.min.js"></script>
+	<script src="js/ResizeSensor.js"></script>
+	<script src="js/slick.min.js"></script>
+	<script src="js/smooth-scrollbar.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
