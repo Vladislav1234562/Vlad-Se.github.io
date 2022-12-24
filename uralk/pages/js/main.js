@@ -915,6 +915,15 @@ $(document).ready(function(){
 					]
 				});
 			});
+			// remove cart
+			$('.fv-remove').click(function(e){
+				e.preventDefault();
+				$(this).closest('li').fadeOut(500);
+				let ThisItem = $(this);
+				setTimeout(function(){
+					ThisItem.closest('li').remove();
+				},500);
+			});
 
 			// slider
 			$('.ts-prt-slider').each(function () {

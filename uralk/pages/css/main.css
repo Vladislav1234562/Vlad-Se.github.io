@@ -2710,6 +2710,9 @@ input[type=number] {
 	background-color: #F5F5F5;
 	color: #4D4D4D;
 }
+.btn-favorite:not(:last-child){
+	margin-right: 20px;
+}
 
 .btn-favorite span {}
 
@@ -2722,6 +2725,16 @@ input[type=number] {
 	stroke: currentColor;
 	stroke-width: 10px;
 }
+.btn-cart svg {
+	width: 44px;
+	height: 44px;
+	margin-left: 10px;
+	margin-bottom: -4px;
+	fill: transparent;
+	stroke: none;
+	stroke-width: 10px;
+}
+
 
 .btn-favorite:hover {
 	color: white;
@@ -3377,6 +3390,30 @@ ul.tm-list > li {
 		-ms-flex-pack: center;
 		justify-content: center;
 		margin-top: 0;
+	}
+	.fv-add{
+		text-decoration: none;
+		font-size: 20px;
+		width: 26px;
+		height: 26px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-ms-flex-negative: 0;
+		flex-shrink: 0;
+		margin-right: 50px;
+		fill: transparent;
+		stroke-width: 7;
+		stroke: var(--main-color);
+	}
+	.fv-add._active{
+		fill: var(--main-color);
 	}
 
 	.fv-remove {
@@ -5338,7 +5375,7 @@ ul.city-search-autocomplete-list a {
 .h-item.h-select-wrp {
 	-ms-flex-negative: 0;
 	flex-shrink: 0;
-	width: 310px;
+	width: 235px;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -5740,7 +5777,11 @@ ul.cart-list .fv-total {
 		line-height: 20px !important;
 	}
 }
-
+@media screen and (max-width: 1599px) and (min-width: 992px) {
+	.fv-add{
+		margin-right: 20px;
+	}
+}
 
 @media screen and (max-width: 1499px) and (min-width: 992px) {
 	:root {
@@ -5937,6 +5978,9 @@ ul.cart-list .fv-total {
 	ul.cart-list .fv-price {
 		width: 154px;
 	}
+	.pr-tt-wrap{
+		width: 38.6%;
+	}
 }
 @media screen and (max-width: 1299px) and (min-width: 992px) {
 	.vacancy__item{
@@ -5947,6 +5991,10 @@ ul.cart-list .fv-total {
 @media screen and (max-width: 1199px) and (min-width: 992px) {
 	.h-item.h-tel-wrp {
 		width: 21%;
+	}
+
+	.fv-box .ct-cart{
+		width: 35px;
 	}
 
 	html {
@@ -8885,4 +8933,11 @@ ul.cart-list .fv-total {
 	font-weight: 400;
 	font-size: 20px;
 	line-height: 24px;
+}
+.arb-col-r{
+	display: flex;
+}
+.ct-tp-col-r{
+	display: flex;
+	flex-direction: row;
 }
