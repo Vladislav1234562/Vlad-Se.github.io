@@ -4585,7 +4585,7 @@ hr {
 .main-ot-container {
 	background-color: white;
 	padding-top: 112px;
-	z-index: -1!important;
+	z-index: 1!important;
 }
 
 
