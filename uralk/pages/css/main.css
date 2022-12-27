@@ -9104,17 +9104,29 @@ ul.cart-list .fv-total {
 	height: 200px;
 	display: none;
 	overflow: hidden;
+	border-radius: 35px 35px 0 0;
+	border: 1px solid rgba(77, 77, 77, 0.360784);
+	border-bottom: none;
+}
+.ct-balance.open{
+	border: 1px solid rgba(77, 77, 77, 0.360784);
+	border-top: none;
 }
 .ct-balance.open svg{
 	transform: rotate(180deg);
 }
 .ct-balance span{
 	color: #4D4D4D;
-	font-size: 24px;
-	line-height: 29px;
+	font-size: 20px;
+	line-height: 24px;
 	font-weight: 300;
 	font-family: Lato;
 }
 .ct-balance span a{
 	text-decoration: underline;
+	color: #4D4D4D;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 300;
+	font-family: Lato;
 }
