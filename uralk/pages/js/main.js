@@ -405,7 +405,19 @@ $(document).ready(function () {
 			}
 		});
 	});
-
+	$(document).on('click', '.step-btn', function (e) {
+		$.fancybox.close();
+	});
+	$(document).on('click', '.ct-balance', function(e){
+		if($(this).hasClass('open')){
+			$(this).removeClass('open');
+			$(this).find('.ct-balance-hid').slideUp(200);
+		}
+		else{
+			$(this).addClass('open');
+			$(this).find('.ct-balance-hid').slideDown(200);
+		}
+	});
 
 
 	//select modal
