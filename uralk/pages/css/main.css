@@ -9107,6 +9107,7 @@ ul.cart-list .fv-total {
 	border-radius: 35px 35px 0 0;
 	border: 1px solid rgba(77, 77, 77, 0.360784);
 	border-bottom: none;
+	paddin: 40px 10px;
 }
 .ct-balance.open{
 	border: 1px solid rgba(77, 77, 77, 0.360784);
