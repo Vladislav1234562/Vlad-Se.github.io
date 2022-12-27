@@ -9105,13 +9105,10 @@ ul.cart-list .fv-total {
 	display: none;
 	overflow: hidden;
 	border-radius: 35px 35px 0 0;
-	border: 1px solid rgba(77, 77, 77, 0.360784);
-	border-bottom: none;
-	paddin: 40px 10px;
+	padding: 40px 10px;
+	box-shadow: 0 -24px 30px rgba(77, 77, 77, 0.15);
 }
 .ct-balance.open{
-	border: 1px solid rgba(77, 77, 77, 0.360784);
-	border-top: none;
 }
 .ct-balance.open svg{
 	transform: rotate(180deg);
@@ -9122,12 +9119,17 @@ ul.cart-list .fv-total {
 	line-height: 24px;
 	font-weight: 300;
 	font-family: Lato;
+	display: block;
+	margin-bottom: 10px;
 }
 .ct-balance span a{
-	text-decoration: underline;
+	text-decoration: none;
 	color: #4D4D4D;
 	font-size: 20px;
 	line-height: 24px;
 	font-weight: 300;
 	font-family: Lato;
+}
+.ct-balance span a:hover{
+	text-decoration: underline;
 }
