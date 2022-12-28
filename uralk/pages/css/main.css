@@ -9134,3 +9134,10 @@ ul.cart-list .fv-total {
 .ct-balance span a:hover{
 	text-decoration: underline;
 }
+.ct-btn-middle{
+	display: flex;
+	position:absolute;
+	right: 0;
+	bottom: 0;
+	align-items: center;
+}
