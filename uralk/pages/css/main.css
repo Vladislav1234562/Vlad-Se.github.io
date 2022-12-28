@@ -4585,7 +4585,7 @@ hr {
 .main-ot-container {
 	background-color: white;
 	padding-top: 112px;
-	z-index: -1!important;
+	z-index: 1!important;
 }
 
 
@@ -9088,6 +9088,7 @@ ul.cart-list .fv-total {
 	align-items: center;
 	margin-top: 18px;
 	position: relative;
+	cursor: pointer;
 }
 .ct-balance span{
 	color: #999999;
@@ -9101,10 +9102,35 @@ ul.cart-list .fv-total {
 	bottom: 100%;
 	background: #fff;
 	width: 100%;
-	height: 200px;
+	height: auto;
 	display: none;
 	overflow: hidden;
+	border-radius: 35px 35px 0 0;
+	padding: 40px 10px;
+	box-shadow: 0 -24px 30px rgba(77, 77, 77, 0.15);
+}
+.ct-balance.open{
 }
 .ct-balance.open svg{
 	transform: rotate(180deg);
+}
+.ct-balance span{
+	color: #4D4D4D;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 300;
+	font-family: Lato;
+	display: block;
+	margin-bottom: 10px;
+}
+.ct-balance span a{
+	text-decoration: none;
+	color: #4D4D4D;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 300;
+	font-family: Lato;
+}
+.ct-balance span a:hover{
+	text-decoration: underline;
 }
