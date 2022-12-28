@@ -1,0 +1,21 @@
+@media only screen and (max-width: 900px) {  
+    .big-block-slider{width:auto;}
+}
+@media only screen and (max-width: 700px) { 
+    .block-slider{height:300px; width:600px;}
+    .left-strelka{height:300px;}
+    .right-strelka{height:300px;}
+    .one-pic{width:600px;}
+}
+@media only screen and (max-width: 600px) { 
+    .block-slider{height:200px; width:400px;}
+    .left-strelka{height:200px;}
+    .right-strelka{height:200px;}
+    .one-pic{width:400px;}
+}
+@media only screen and (max-width: 400px) { 
+    .block-slider{height:156px; width:250px;}
+    .left-strelka{height:156px;}
+    .right-strelka{height:156px;}
+    .one-pic{width:250px;}
+}

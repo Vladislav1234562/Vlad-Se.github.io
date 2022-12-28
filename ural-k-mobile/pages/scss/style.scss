@@ -1,0 +1,38 @@
+@import "fonts";
+:root{
+	--white: #fff;
+	--black: #000;
+}
+html{
+    box-sizing: border-box;
+}
+*, *::after, *::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: var(--white);
+    color: var(--black);
+    font-family: "Inter-Regular", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+}
+a{
+    text-decoration: none; color: inherit;
+}
+.c{
+    clear:both;
+}
+img{
+    border:none;
+    outline:none;
+    vertical-align:bottom;
+}
+
+
+
+
+.wow{
+    visibility: hidden;
+}/* если подключено wow.js */
