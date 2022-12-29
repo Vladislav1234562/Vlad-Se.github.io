@@ -2476,6 +2476,39 @@ input::-webkit-inner-spin-button {
   .tovars__item-middle .tovars__item-price{
     padding-top: 0;
   }
+	.header__menu-logo{
+		width: calc(100% - 60px);
+		margin-top: 50px;
+		margin-bottom: 35px;
+	}
+	.header__menu-logo img{
+		max-widrh: 100%;
+	}
+	.header__menu-soc{
+		width: 70px
+	}
+	.header__menu-close{
+		left: 35px;
+	}
+	.header__menu-right{
+		width: calc(100% - 70px);
+		padding-left: 30px;
+	}
+	.header__menu-list{
+		margin-bottom: 20px;
+	}
+	.header__menu-item{
+		margin-bottom: 20px;
+	}
+	.header__menu-item a{
+		font-size: 24px;
+		line-height: 31px;
+	}
+	.header__menu-bottom{
+		font-size: 18px;
+		line-height: 26px;
+	}
+	
 }
 @media only screen and (max-width: 600px){
   .container{
