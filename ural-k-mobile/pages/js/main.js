@@ -304,6 +304,7 @@ $(document).ready(function(e) {
 	});
 	$(document).on('click', '.modal-btn', function() {
 		valid('.modal-container input');
+	        validChek($(this));
 	});
 	/* Остаток на складе */
 	$('.tovars__item-balance').click(function(){
