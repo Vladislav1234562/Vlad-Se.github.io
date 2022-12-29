@@ -2294,7 +2294,16 @@ input::-ms-clear {
 	width: 0 !important;
 	height: 0 !important;
 	overflow: hidden;
-
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+input::clear {
+	display: none !important;
+	width: 0 !important;
+	height: 0 !important;
+	overflow: hidden;
+	-webkit-appearance: none;
+	-moz-appearance: none;
 }
 @media only screen and (max-width: 700px){
   .container{
