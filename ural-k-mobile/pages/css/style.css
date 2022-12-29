@@ -1094,6 +1094,7 @@ h1 span{
   justify-content: center;
   align-items: center;
   margin-bottom: 216px;
+	width: 100%;
 }
 .catalog__pagination div{
   display: flex;
