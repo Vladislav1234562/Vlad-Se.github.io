@@ -946,8 +946,16 @@ h1 span{
   font-family: Futura PT;
 }
 .filter__item-bottom{
-  height: 100px;
+  height: auto;
   display: none;
+	padding: 20px;
+}
+.filter__item-bottom span{
+	color: #4D4D4D;
+	font-size: 30px;
+	line-height: 34px;
+	font-weight: 300;
+	font-family: Futura PT;	
 }
 .filter__item-top._open svg{
   transform: rotate(180deg);
@@ -3259,5 +3267,9 @@ input::-webkit-inner-spin-button {
 	.novelty__list{
 		padding-bottom: 20px;
 		border-bottom: 1px solid #4D4D4D;
+	}
+	.filter__item-bottom span{
+		font-size: 18px;
+		line-height: 24px;
 	}
 }
