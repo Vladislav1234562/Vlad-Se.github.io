@@ -296,10 +296,16 @@ $(document).ready(function(e) {
 	      valid($(this));
 	      validChek($(this));
 	});
-	$(document).on('click', '.form__btn', function() {
+	$(document).on('click', '.form__btn', function(e) {
 		valid('.form__inp');
+		if($('input[name=form_name]').val() != '' && $('input[name=form_mail]').val() != '' && $('input[name=form_phone]').val() != '' &&$('input[name=form_organization]').val() != ''){
+			
+		}
+		else{
+			e.preventDefault();	
+		}
 	});
-	$('.modal-container').find('input).keyup(function(){
+	$('.modal-container').find('input').keyup(function(){
 	      valid($(this));
 	});
 	$(document).on('click', '.modal-btn', function() {
