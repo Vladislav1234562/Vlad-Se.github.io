@@ -2311,6 +2311,93 @@ input::-webkit-inner-spin-button {
 	margin: 0;
 	/* &lt;-- Apparently some margin are still there even though it's hidden */
 }
+.header__menu-hid{
+  transform: translateX(-100%);
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  background: #F3F3F4;
+  transition: all .5s ease;
+  z-index: 101;
+}
+.header__menu-hid-box{
+  display: flex;
+  height: 100%;
+}
+.header__menu-soc{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+.header__menu-soc a{
+  display: inline-block;
+  margin: 19px 0;
+}
+.header__menu-right{
+  width: calc(100% - 150px);
+  border-left: 1px solid rgba(0, 0, 0, 0.25);
+  padding-left: 56px;
+  overflow: auto;
+}
+.header__menu-logo{
+  margin-top: 110px;
+  margin-bottom: 75px;
+}
+.header__menu-list{
+  margin-bottom: 40px;
+}
+.header__menu-item{
+  margin-bottom: 37px;
+  list-style: none;
+}
+.header__podrazdels-top{
+  display: flex;
+  align-items: center;
+}
+.header__menu-item svg{
+  margin-left: 20px;
+}
+.header__menu-item a{
+  color: #4D4D4D;
+  font-family: Futura PT;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 46px;
+  text-transform: uppercase;
+}
+.header__menu-razdels{
+  width: 100%;
+  display: none;
+  padding-top: 20px;
+}
+.header__menu-razdels .header__menu-item{
+  margin-bottom: 15px;
+}
+.header__menu-razdels .header__menu-item a{
+  padding-left: 20px;
+  font-size: 30px;
+}
+.header__menu-bottom{
+  color: #4D4D4D;
+  font-family: Lato;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  padding-bottom: 20px;
+}
+.header__menu-close{
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  left: 75px;
+  transform: translateX(-50%);
+  width: 26px;
+  height: 26px;
+}
 @media only screen and (max-width: 700px){
   .container{
     padding: 0 38px;
