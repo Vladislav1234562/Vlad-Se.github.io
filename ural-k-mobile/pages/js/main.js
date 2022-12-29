@@ -46,6 +46,14 @@ $(function(){
 			class_one.children('input').attr('checked','checked');
 			}
 	}
+	function anchorLink(name_tag){
+		$(name_tag).click(function(e){
+			e.preventDefault();s
+			destination = $($(this).attr('href')).offset().top;
+			$('html').animate( { scrollTop: destination }, 1100 );
+			return false;
+		});
+	}
 $(document).ready(function(e) {
 	$(window).resize(function() {
 
@@ -125,6 +133,8 @@ $(document).ready(function(e) {
 		autoplay: false,
 		variableWidth: true
 	});
+	/* Якоря */
+	anchorLink('.yak-btn');
 	/* Работа с количеством */
 	$(document).on('click', '.item-count__name-type', function(){
 		$(this).addClass('_active');
