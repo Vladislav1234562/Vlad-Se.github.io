@@ -2129,9 +2129,9 @@ h1 span{
   box-shadow: 0 11px 55px rgba(77, 77, 77, 0.5);
   padding: 91px 60px 53px 60px;
   position: fixed;
-  top: 94px;
+  top: 50%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   z-index: 100;
   display: none;
 }
@@ -2643,8 +2643,8 @@ input::-webkit-inner-spin-button {
     margin-bottom: 20px;
   }
   .footer__nav-item{
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 24px;
     margin-bottom: 20px;
   }
   .footer__soc{
@@ -3253,4 +3253,11 @@ input::-webkit-inner-spin-button {
     width: 71px;
     height: 61px;
   }
+	.filter__chek{
+		justify-content: space-between;
+	}
+	.novelty__list{
+		padding-bottom: 20px;
+		border-bottom: 1px solid #4D4D4D;
+	}
 }
