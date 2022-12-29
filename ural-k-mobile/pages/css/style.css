@@ -949,6 +949,8 @@ h1 span{
   height: auto;
   display: none;
 	padding: 20px;
+	display: flex;
+	flex-direction: column;
 }
 .filter__item-bottom span{
 	color: #4D4D4D;
@@ -956,6 +958,8 @@ h1 span{
 	line-height: 34px;
 	font-weight: 300;
 	font-family: Futura PT;	
+	display: inline-block;
+	margin-bottom: 15px;
 }
 .filter__item-top._open svg{
   transform: rotate(180deg);
