@@ -44,11 +44,11 @@ $(function(){
 	    chek = input_id.find('input').attr('checked');
 	    if(chek == 'checked')
 	      {
-	      $(input_id).css('border','none');
+	      $(input_id).find('span').eq(0).css('border','none');
 	      }
 	    else
 	      {
-	      $(input_id).css('border','1px solid #e40033');
+	      $(input_id).find('span').eq(0).css('border','1px solid #e40033');
 	      }
 	  }
 	  function clear(input_id,border,backg){
