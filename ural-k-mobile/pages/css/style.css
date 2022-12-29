@@ -2289,7 +2289,7 @@ h1 span{
   font-size: 16px;
   line-height: 21px;
 }
-.h-search input::-ms-clear {
+input::-ms-clear {
     display: none;
 }
 @media only screen and (max-width: 700px){
