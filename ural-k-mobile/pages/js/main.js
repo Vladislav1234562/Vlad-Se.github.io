@@ -48,7 +48,7 @@ $(function(){
 	}
 	function anchorLink(name_tag){
 		$(name_tag).click(function(e){
-			e.preventDefault();s
+			e.preventDefault();
 			destination = $($(this).attr('href')).offset().top;
 			$('html').animate( { scrollTop: destination }, 1100 );
 			return false;
