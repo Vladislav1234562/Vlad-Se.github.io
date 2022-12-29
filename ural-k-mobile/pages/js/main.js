@@ -27,6 +27,35 @@ $(function(){
 				 $(this).attr("placeholder", $(this).data('empty'));  
 		  });
 	  }
+	function valid(input_id){
+	    input_val = $(input_id).val();
+	    if(!input_val)
+	      {
+	      $(input_id).css('border','1px solid #e40033');
+	      $(input_id).css('background-color','#fce5ea');
+	      }
+	    else
+	      {
+	      $(input_id).css('border','none');
+	      $(input_id).css('background-color','#F9F9F9');
+	      }
+	  }
+	function validChek(input_id){
+	    chek = input_id.find('input').attr('checked');
+	    if(chek == 'checked')
+	      {
+	      $(input_id).css('border','none');
+	      }
+	    else
+	      {
+	      $(input_id).css('border','1px solid #e40033');
+	      }
+	  }
+	  function clear(input_id,border,backg){
+	    if(border){$(input_id).css("border",border);}
+	    if(backg){$(input_id).css("background-color",backg);}
+	    $(input_id).val('');
+	  }
 	  function chekb(class_one,class_activ){
 		if(class_one.children('input').prop('checked') == false)
 			{
@@ -262,6 +291,20 @@ $(document).ready(function(e) {
 		}
 		
 	});
+	/* Валидация */
+	$('.form__inp').keyup(function(){
+	      valid($(this));
+	      validChek($(this));
+	});
+	$(document).on('click', '.form__btn', function() {
+		valid('.form__inp');
+	});
+	$('.modal-container').find('input).keyup(function(){
+	      valid($(this));
+	});
+	$(document).on('click', '.modal-btn', function() {
+		valid('.modal-container input');
+	});
 	/* Остаток на складе */
 	$('.tovars__item-balance').click(function(){
 		if($(this).hasClass('open')){
@@ -276,9 +319,11 @@ $(document).ready(function(e) {
 	/* Чекбоксы */
 	$('.form__bottom-chek, .filter__chek, .modal-chek').each(function () {
 		chekb_val($(this),'_active');
+		validChek($(this));
 	});
 	$('.form__bottom-chek, .filter__chek, .modal-chek').click(function(){
 		chekb($(this),'_active');
+		validChek($(this));
 	});
 	/* Маска на инпуты */
 	$('input[name=form_phone]').mask("+7 (999) 999 - 99 - 99");
