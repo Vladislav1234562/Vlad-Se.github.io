@@ -204,7 +204,7 @@ $(document).ready(function(e) {
 		},200);
 	});
 	/* Млдалка корзины */
-	$('.tovars__item-cart').click(function(e){
+	$('.tovars__item-cart, .novelty__item-cart').click(function(e){
 		lockScroll();
 		e.preventDefault();
 		$('.page-shadow').fadeIn(200);
