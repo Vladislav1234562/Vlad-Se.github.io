@@ -1215,14 +1215,37 @@ h1 span{
   padding-left: 10px;
   padding-right: 0;
 }
+.cart-bottom{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 35px;
+}
 .cart-price{
-  text-align: right;
-  margin-bottom: 35px;
+  text-align: left;
   color: #4D4D4D;
   font-size: 72px;
   line-height: 84px;
   font-weight: 300;
   font-family: Futura PT;
+}
+.cart-basket-fav{
+	display: flex;
+	align-items: center;
+}
+.cart-b__item-cart{
+	transition: all .2s ease;
+	fill: var(--main-color);
+	color: var(--main-color);
+}
+.cart-b__item-cart svg:last-child {
+  display: none;
+}
+.cart-b__item-favorite{
+	fill: #fff;
+	stroke: var(--main-color);
+	stroke-width: 7px;
+	transition: all .2s ease;
 }
 .cart-btn{
   width: 100%;
