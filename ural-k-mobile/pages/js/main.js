@@ -44,7 +44,7 @@ $(function(){
 	    chek = input_id.find('input').attr('checked');
 	    if(chek == 'checked')
 	      {
-	      $(input_id).find('span').eq(0).css('border','#4D4D4D');
+	      $(input_id).find('span').eq(0).css('border','1px solid #4D4D4D');
 	      }
 	    else
 	      {
@@ -237,6 +237,9 @@ $(document).ready(function(e) {
 		$('.modal-final').fadeOut(200);
 	});
 	$('.modal-btn').click(function(){
+		valid('.modal-container input[name=modal_phone]');
+		valid('.modal-container input[name=modal_name]');
+	        validChek($(this));
 		if($('input[name=modal_name]').val() != '' && $('input[name=modal_phone]').val() != '' && $('.modal-chek').find('input').attr('checked') == 'checked'){
 			$('.modal').fadeOut(200);
 			setTimeout(function(){
@@ -299,7 +302,10 @@ $(document).ready(function(e) {
 	      validChek($(this));
 	});
 	$(document).on('click', '.form__btn', function(e) {
-		valid('.form__inp');
+		valid('input[name=form_name');
+		valid('input[name=form_mail]');
+		valid('input[name=form_phone]');
+		valid('input[name=form_organization]');
 		if($('input[name=form_name]').val() != '' && $('input[name=form_mail]').val() != '' && $('input[name=form_phone]').val() != '' &&$('input[name=form_organization]').val() != '' && $('.form__bottom-chek').find('input').attr('checked') == 'checked'){
 			
 		}
@@ -309,10 +315,6 @@ $(document).ready(function(e) {
 	});
 	$('.modal-container').find('input').keyup(function(){
 	      valid($(this));
-	});
-	$(document).on('click', '.modal-btn', function() {
-		valid('.modal-container input');
-	        validChek($(this));
 	});
 	/* Остаток на складе */
 	$('.tovars__item-balance').click(function(){
