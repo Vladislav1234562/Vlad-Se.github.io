@@ -231,6 +231,27 @@ $(document).ready(function(e) {
 			unlockScroll();
 		}
 	});
+	/* Меню */
+	$('.header__butter').click(function(){
+		$('.header__menu-hid').css({"transform":"translateX(0)"});
+		lockScroll();
+	});
+	$('.header__menu-close').click(function(){
+		$('.header__menu-hid').css({"transform":"translateX(-100%)"});
+		unlockScroll();
+	});
+	$('.header__podrazdels-top').click(function(e){
+		e.preventDefault();
+		if($(this).hasClass('open')){
+			$(this).removeClass('open');
+			$(this).parent().find('.header__menu-razdels').slideUp(200);
+		}
+		else{
+			$(this).addClass('open');
+			$(this).parent().find('.header__menu-razdels').slideDown(200);
+		}
+		
+	});
 	/* Остаток на складе */
 	$('.tovars__item-balance').click(function(){
 		if($(this).hasClass('open')){
