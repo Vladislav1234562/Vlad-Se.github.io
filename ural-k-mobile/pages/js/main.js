@@ -44,7 +44,7 @@ $(function(){
 	    chek = input_id.find('input').attr('checked');
 	    if(chek == 'checked')
 	      {
-	      $(input_id).find('span').eq(0).css('border','none');
+	      $(input_id).find('span').eq(0).css('border','#4D4D4D');
 	      }
 	    else
 	      {
@@ -237,10 +237,12 @@ $(document).ready(function(e) {
 		$('.modal-final').fadeOut(200);
 	});
 	$('.modal-btn').click(function(){
-		$('.modal').fadeOut(200);
-		setTimeout(function(){
-			$('.modal-final').fadeIn(200);
-		},200);
+		if($('input[name=modal_name]').val() != '' && $('input[name=modal_phone]').val() != '' && $('.modal-chek').find('input').attr('checked') == 'checked'){
+			$('.modal').fadeOut(200);
+			setTimeout(function(){
+				$('.modal-final').fadeIn(200);
+			},200);
+		}
 	});
 	/* Млдалка корзины */
 	$('.tovars__item-cart, .novelty__item-cart, .cart-b__item-cart').click(function(e){
@@ -298,7 +300,7 @@ $(document).ready(function(e) {
 	});
 	$(document).on('click', '.form__btn', function(e) {
 		valid('.form__inp');
-		if($('input[name=form_name]').val() != '' && $('input[name=form_mail]').val() != '' && $('input[name=form_phone]').val() != '' &&$('input[name=form_organization]').val() != ''){
+		if($('input[name=form_name]').val() != '' && $('input[name=form_mail]').val() != '' && $('input[name=form_phone]').val() != '' &&$('input[name=form_organization]').val() != '' && $('.form__bottom-chek').find('input').attr('checked') == 'checked'){
 			
 		}
 		else{
