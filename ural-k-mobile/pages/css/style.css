@@ -949,6 +949,8 @@ h1 span{
   height: auto;
   display: none;
 	padding: 20px;
+}
+.filter__item-bottom-box{
 	display: flex;
 	flex-direction: column;
 }
