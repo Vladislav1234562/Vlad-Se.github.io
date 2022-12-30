@@ -3307,4 +3307,8 @@ input::-webkit-inner-spin-button {
 		font-size: 18px;
 		line-height: 24px;
 	}
+	.novelty__item-text-item p{
+		font-size: 14px;
+		line-height: 17px;
+	}
 }
