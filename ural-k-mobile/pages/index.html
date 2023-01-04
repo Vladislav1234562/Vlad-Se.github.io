@@ -30,12 +30,30 @@
 				<span>Выбор региона</span>
 				<div class="city-hid">
 					<div class="city-hid__container">
-						<div class="city-hid__item _active">Екатеринбург</div>
-						<div class="city-hid__item">Челябинск</div>
-						<div class="city-hid__item">Тюмень</div>
-						<div class="city-hid__item">Уфа</div>
-						<div class="city-hid__item">Пермь</div>
-						<div class="city-hid__shadow"></div>
+						<div class="modal city-select">
+							<div class="cs-caption">Выберите город</div>
+							<ul class="main-city-list custom">
+								<li><a href="#">Екатерибург</a></li>
+								<li><a href="#">Тюмень</a></li>
+								<li><a href="#">Уфа</a></li>
+								<li><a href="#">Пермь</a></li>
+								<li><a href="#">Челябинск</a></li>
+								<li><a href="#">Ханты-Мансийск</a></li>
+								<li><a href="#">Салехард</a></li>
+							</ul>
+
+							<div class="cs-caption">или введите его название</div>
+							<div class="city-search">
+								<input type="search" name="textfield" autocomplete="off" placeholder="Ввведите название">
+								<div class="city-search-autocomplete">
+									<ul class="city-search-autocomplete-list custom">
+										<li><a href="#">Самара, Самарская обл.</a></li>
+										<li><a href="#">Саратов, Саратовская обл.</a></li>
+										<li><a href="#">Серпухов, Московская обл.</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
