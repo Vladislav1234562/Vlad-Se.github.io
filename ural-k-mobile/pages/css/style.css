@@ -224,10 +224,11 @@ main{
   -moz-osx-font-smoothing: grayscale;
 }
 .city-hid{
-  position: absolute;
-  top: calc(100% + 9px);
-  left: 0;
-  width: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 30px);
+	transform: translate(-50%,-50%);
   display: none;
   z-index: 100;
 }
@@ -236,8 +237,9 @@ main{
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background: #fff;
-  border-radius: 0px 0px 15px 15px;
+  background: #F5F5F5;;
+  border-radius: 35px;
+	box-shadow: 0 11px 55px rgba(77, 77, 77, 0.5);
 }
 .city-hid__item{
   font-family: Futura PT;
@@ -246,6 +248,38 @@ main{
   line-height: 44px;
   text-align: center;
   color: #7E7F83;
+}
+.city-select{
+	width: 100%;
+}
+.cs-caption{
+	font-size: 28px;
+	line-height: 32px;
+	font-weight: 600;
+	font-family: Futura PT;
+	color: #4D4D4D;
+}
+.main-city-list{
+	margin-bottom: 20px;
+}
+.main-city-list li{
+	list-style-type: none;
+	font-size: 24px;
+	line-height: 31px;
+	font-weight: 300;
+	font-family: Futura PT;
+	color: #4D4D4D;
+}
+.city-search-autocomplete{
+	display: none;
+}
+.city-search-autocomplete li{
+	list-style-type: none;
+	font-size: 24px;
+	line-height: 31px;
+	font-weight: 300;
+	font-family: Futura PT;
+	color: #4D4D4D;
 }
 .city-hid__item._active{
   color: #000;
