@@ -1505,7 +1505,8 @@ h1 span{
   display: flex;
   justify-content: space-between;
   align-items: center;
-	padding-bottom: 15px;
+	padding-bottom: 60px;
+	position: relative;
 }
 .favorites-item-store{
   flex-shrink: 0;
