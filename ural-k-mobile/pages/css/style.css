@@ -240,6 +240,26 @@ main{
   background: #F5F5F5;;
   border-radius: 35px;
 	box-shadow: 0 11px 55px rgba(77, 77, 77, 0.5);
+	padding: 30px;
+	position: relative;
+}
+.city-hid input{
+	height: 52px;
+	background: #C4C4C4;
+	border-radius: 35px;
+	padding-left: 19px;
+	padding-right: 40px;
+	font-size: 18px;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-family: Lato;
+	width: 100%;
+	min-width: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
 }
 .city-hid__item{
   font-family: Futura PT;
