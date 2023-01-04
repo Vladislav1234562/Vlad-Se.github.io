@@ -5074,6 +5074,7 @@ ul.ts-pg-list > li {
 .ed-bottom-r .place-map {
 	bottom: -82.7%;
 	right: 22.9%;
+	z-index: -1;
 }
 
 .container ul.ct-list > li {
