@@ -235,7 +235,6 @@ $(document).ready(function(e) {
 		$('.modal').fadeOut(200);
 		$('.modal-cart').fadeOut(200);
 		$('.modal-final').fadeOut(200);
-		$('.city-hid').fadeOut(200);
 	});
 	$('.modal-btn').click(function(){
 		valid('.modal-container input[name=modal_phone]');
@@ -264,6 +263,11 @@ $(document).ready(function(e) {
 		setTimeout(function(){
 			$('.city-hid').fadeIn(200);
 		},100);
+	});
+	$('.city-close').click(function(e){
+		unlockScroll();
+		$('.page-shadow').fadeOut(200);
+		$('.city-hid').fadeOut(200);
 	});
 	$(document).mouseup(function (e){ 
 		var div = $('.city-hid, .modal-cart, .modal, .modal-final'); 
