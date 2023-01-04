@@ -2421,7 +2421,7 @@ input::-webkit-inner-spin-button {
 }
 .header__menu-razdels .header__menu-item a{
   padding-left: 20px;
-  font-size: 30px;
+  font-size: 20px;
 }
 .header__menu-bottom{
   color: #4D4D4D;
@@ -2529,7 +2529,7 @@ input::-webkit-inner-spin-button {
 		margin-bottom: 35px;
 	}
 	.header__menu-logo img{
-		max-widrh: 100%;
+		max-width: 100%;
 	}
 	.header__menu-soc{
 		width: 70px
