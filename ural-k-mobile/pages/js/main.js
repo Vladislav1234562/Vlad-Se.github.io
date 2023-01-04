@@ -235,6 +235,7 @@ $(document).ready(function(e) {
 		$('.modal').fadeOut(200);
 		$('.modal-cart').fadeOut(200);
 		$('.modal-final').fadeOut(200);
+		$('.city-hid').fadeOut(200);
 	});
 	$('.modal-btn').click(function(){
 		valid('.modal-container input[name=modal_phone]');
