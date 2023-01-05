@@ -280,7 +280,7 @@ $(document).ready(function(e) {
 			unlockScroll();
 		}
 	});
-	$('.city-search').find('input').focus(function(){
+	$('.city-search').find('input').click(function(){
 		$('.city-hid').css({"top":"10px","transform":"translate(-50%,0)"});
 	});
 	$('.city-search').find('input').focusout(function(){
