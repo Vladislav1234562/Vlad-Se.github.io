@@ -2385,12 +2385,15 @@ h1 span{
 }
 .tovars__item-store .favorites-item-store__name{
   margin-right: 10px;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 26px;
   width: 115px;
+  font-family: Futura PT;
+  font-weight: 500;
+	text-transform: uppercase;
 }
 .tovars__item-store .favorites-item-store__itog{
-  font-size: 16px;
+  font-size: 18px;
   line-height: 26px;
 }
 input::-ms-clear {
