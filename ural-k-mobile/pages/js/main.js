@@ -280,6 +280,12 @@ $(document).ready(function(e) {
 			unlockScroll();
 		}
 	});
+	$('.city-search').find('input').focus(function(){
+		$('.city-hid').css({"top":"10px","transform":"translate(-50%,0)"});
+	});
+	$('.city-search').find('input').focusout(function(){
+		$('.city-hid').css({"top":"50%","transform":"translate(-50%,-50%)"});
+	});
 	/* Меню */
 	$('.header__butter').click(function(){
 		$('.header__menu-hid').css({"transform":"translateX(0)"});
