@@ -1366,7 +1366,7 @@ h1 span{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-bottom: 54px;
+  margin-bottom: 0;
 	position: relative;
 	padding-bottom: 15px;
 }
