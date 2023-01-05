@@ -5781,7 +5781,7 @@ ul.cart-list .fv-total {
 	.ct-store{
 		position: absolute;
 		right: 0;
-		bottom: 79px;
+		bottom: 55px;
 	}
 	.ct-center{
 		align-items: flex-start !important;
@@ -5796,7 +5796,7 @@ ul.cart-list .fv-total {
 		height: 59px !important;
 	}
 	.ct-store{
-		bottom: 69px;
+		bottom: 55px;
 	}
 }
 
@@ -6008,7 +6008,7 @@ ul.cart-list .fv-total {
 		height: 49px !important;
 	}
 	.ct-store{
-		bottom: 59px;
+		bottom: 55px;
 	}
 }
 
@@ -6294,6 +6294,9 @@ ul.cart-list .fv-total {
 	.pr-ot {
 		font-size: 14px;
 		width: 126px;
+	}
+	.ct-store {
+	  	bottom: 40px;
 	}
 }
 
