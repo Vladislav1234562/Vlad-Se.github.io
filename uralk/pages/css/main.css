@@ -551,7 +551,7 @@ img {
 	font-size: 14px;
 }
 
-.h-auth-wrp{
+.h-auth-wrp a{
 	/*	iOS reset style*/
 	-webkit-appearance: none;
 	border-radius: 0;
@@ -575,7 +575,7 @@ img {
 	font-family: 'Futura PT';
 	font-style: normal;
 	font-weight: 800;
-	color: #FFFFFF;
+	color: #4D4D4D;
 	font-size: 2.4rem;
 	padding-left: 36px;
 	padding-right: 36px;
@@ -587,6 +587,7 @@ img {
 	padding-left: 18px;
 	padding-right: 18px;
 	font-size: 14px;
+	min-height:177px
 }
 
 
@@ -5907,6 +5908,13 @@ ul.cart-list .fv-total {
 		padding-left: 15px;
 		padding-right: 15px;
 		font-size: 11px;
+	}
+	.h-auth-wrp a{
+		height: 45px;
+		padding-left: 15px;
+		padding-right: 15px;
+		font-size: 11px;
+		min-width: 141px;
 	}
 
 	ul.breadcrumb {
