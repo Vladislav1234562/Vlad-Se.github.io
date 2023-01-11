@@ -2520,6 +2520,7 @@ input::-webkit-inner-spin-button {
   margin-bottom: 40px;
   text-align: center;
   font-family: Futura PT;
+	width: calc(100% - 138px);
 }
 .auth-bottom {
   font-size: 14px;
@@ -3071,6 +3072,7 @@ input::-webkit-inner-spin-button {
     line-height: 24px;
     margin-bottom: 25px;
     letter-spacing: 0.01em;
+	  width: 100%;
   }
   .auth-bottom{
     font-size: 12px;
