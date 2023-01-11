@@ -589,6 +589,22 @@ img {
 	font-size: 14px;
 	min-width:177px
 }
+.h-profile-wrp{
+	display: none;
+}
+.h-profile-container{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+}
+.h-profile-container a{
+	color: var(--main-color);
+	border-bottom: 2px dashed var(--main-color);
+	font-family: 'Futura PT';
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 15px;
+}
 
 
 
