@@ -279,6 +279,7 @@ $(document).ready(function(e) {
 		valid('.modal-container input[name=modal_pass]');
 		if($('input[name=modal_pass]').val() != '' && $('input[name=modal_login]').val() != ''){
 			$('.modal-auth').fadeOut(200);
+			$('.page-shadow').fadeOut(200);
 		}
 	});
 	$('.city-close').click(function(e){
