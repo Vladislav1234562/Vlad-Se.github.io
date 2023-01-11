@@ -237,7 +237,7 @@ $(document).ready(function(e) {
 		$('.modal-final').fadeOut(200);
 		$('.modal-auth').fadeOut(200);
 	});
-	$('.modal-btn').click(function(){
+	$('.modal').find('.modal-btn').click(function(){
 		valid('.modal-container input[name=modal_phone]');
 		valid('.modal-container input[name=modal_name]');
 	        validChek($(this));
@@ -273,6 +273,13 @@ $(document).ready(function(e) {
 		setTimeout(function(){
 			$('.modal-auth').fadeIn(200);
 		},100);
+	});
+	$('.modal-auth').find('.modal-btn').click(function(){
+		valid('.modal-container input[name=modal_login]');
+		valid('.modal-container input[name=modal_pass]');
+		if($('input[name=modal_pass]').val() != '' && $('input[name=modal_login]').val() != ''){
+			$('.modal-auth').fadeOut(200);
+		}
 	});
 	$('.city-close').click(function(e){
 		unlockScroll();
