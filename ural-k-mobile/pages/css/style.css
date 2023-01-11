@@ -2734,7 +2734,19 @@ input::-webkit-inner-spin-button {
     height: 43px;
   }
   .header__city svg{
-    margin-right: 0;
+    margin-left: 9px;
+    width: 17px;
+    height: 17px;
+  }
+  .header__city svg:first-child{
+    margin-right: 9px;
+    margin-left: 0;
+    width: 13px;
+    height: 21px;
+  }
+  .header__city span{
+    font-size: 14px;
+    line-height: 17px;
   }
   .header__bottom{
     margin-top: 10px;
