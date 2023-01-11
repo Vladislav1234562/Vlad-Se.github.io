@@ -602,8 +602,8 @@ img {
 	border-bottom: 2px dashed var(--main-color);
 	font-family: 'Futura PT';
 	font-weight: 300;
-	font-size: 12px;
-	line-height: 15px;
+	font-size: 16px;
+	line-height: 24px;
 }
 
 
@@ -5931,6 +5931,10 @@ ul.cart-list .fv-total {
 		padding-right: 15px;
 		font-size: 11px;
 		min-width: 141px;
+	}
+	.h-profile-container a{
+		font-size: 12px;
+		line-height: 16px;
 	}
 
 	ul.breadcrumb {
