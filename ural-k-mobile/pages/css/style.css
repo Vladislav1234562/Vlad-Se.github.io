@@ -326,7 +326,11 @@ main{
 .header__city svg {
   -ms-flex-negative: 0;
   flex-shrink: 0;
+  margin-left: 11px;
+}
+.header__city svg:first-child {
   margin-right: 11px;
+  margin-left: 0;
 }
 .header__city span{
   font-family: Lato;
@@ -334,11 +338,60 @@ main{
   font-size: 24px;
   line-height: 29px;
 }
+.header__auth{
+  margin-left: auto;
+  width: 203px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+  background: #F3F3F4;
+  border-radius: 35px;
+  color: #4D4D4D;
+  font-family: Futura PT;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+.header__profile{
+  display: none;
+  margin-left: auto;
+}
+.header__profile-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.header__profile a{
+  font-size: 18px;
+  line-height: 23px;
+  font-family: Futura PT;
+  font-weight: 300;
+  color: var(--main-color);
+  border-bottom: 2px dashed var(--main-color);
+  display: block;
+}
 .header__favarite{
   fill: #fff;
   stroke: var(--main-color);
   stroke-width: 7px;
   margin-right: 40px;
+  display: flex;
+  align-items: center;
+}
+.header__cart{
+  display: flex;
+  align-items: center;
+}
+.header__favarite span,
+.header__cart span{
+  margin-left: 10px;
+  font-size: 18px;
+  line-height: 22px;
+  color: #4D4D4D;
+  font-family: Lato;
+  font-weight: 300;
 }
 .header__bottom{
   display: flex;
@@ -2540,7 +2593,15 @@ input::-webkit-inner-spin-button {
     height: 61px;
   }
   .header__favarite{
-    margin-right: 20px;
+    margin-right: 0;
+  }
+  .header__bottom{
+    flex-wrap: wrap;
+  }
+  .header__call{
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
   }
   .favorites-item-price{
     font-size: 16px;
@@ -2651,11 +2712,17 @@ input::-webkit-inner-spin-button {
   .header__butter{
     width: 25px;
   }
-  .header__city span{
-    display: none;
+  .header__favarite svg{
+    width: 24px;
+    height: 24px;
   }
-  .header__favarite{
-    margin-right: 35px;
+  .header__cart svg{
+    width: 26px;
+    height: 22px;
+  }
+  .header__favarite span, .header__cart span{
+    font-size: 13px;
+    line-height: 16px;
   }
   .header__butter span::before {
     transform: translateY(12px);
@@ -3416,4 +3483,24 @@ input::-webkit-inner-spin-button {
 		font-size: 14px;
 		line-height: 17px;
 	}
+	
+  .header__auth{
+    background: none;
+    width: auto;
+    height: auto;
+    border-radius: 0;
+  }
+  .header__butter{
+    margin-right: 14px;
+  }
+  .header__logo{
+    margin-right: 20px;
+  }
+  .header__profile a{
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .header__profile a:first-child{
+    margin-bottom: 6px;
+  }
 }
