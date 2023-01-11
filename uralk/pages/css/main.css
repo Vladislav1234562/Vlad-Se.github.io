@@ -963,6 +963,7 @@ input:not(.btn).parsley-error {
 
 .header {
 	position: relative;
+	z-index: 99;
 }
 
 .h-flex {
