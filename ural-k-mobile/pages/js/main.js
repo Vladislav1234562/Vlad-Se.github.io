@@ -266,7 +266,7 @@ $(document).ready(function(e) {
 		},100);
 	});
 	/* модалка авторизации */
-	$('.auth-btn').click(function(e){
+	$('.header__auth').click(function(e){
 		e.preventDefault();
 		lockScroll();
 		$('.page-shadow').fadeIn(200);
@@ -280,6 +280,8 @@ $(document).ready(function(e) {
 		if($('input[name=modal_pass]').val() != '' && $('input[name=modal_login]').val() != ''){
 			$('.modal-auth').fadeOut(200);
 			$('.page-shadow').fadeOut(200);
+			$('.header__auth').css({"display":"none"});
+			$('.header__profile').fadeIn(200);
 		}
 	});
 	$('.city-close').click(function(e){
