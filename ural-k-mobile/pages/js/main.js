@@ -220,7 +220,7 @@ $(document).ready(function(e) {
 		}
 	});
 	/* модалка звонка */
-	$('.header__call').click(function(e){
+	$('.header__call, .call-manager').click(function(e){
 		lockScroll();
 		e.preventDefault();
 		$('.page-shadow').fadeIn(200);
