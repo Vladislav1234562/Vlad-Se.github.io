@@ -2965,6 +2965,66 @@ input[type=number] {
 	font-family: Futura PT;
 	text-decoration: underline;
 }
+.lk-text{
+	margin-bottom: 35px;
+}
+.lk-text p{
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 400;
+	font-family: Lato;
+	color: #000;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+.lk-text ul{
+	margin: 0;
+	padding: 0;
+}
+.lk-text ul li{
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 400;
+	font-family: Lato;
+	color: #4D4D4D;
+	margin-bottom: 10px;
+	list-style: none;
+}
+.load-price{
+	display: flex;
+	align-items: center;
+	margin-bottom: 40px;
+	background: none;
+	border: none;
+	outline: none;
+}
+.load-price a{
+	margin-left: 20px;
+	font-size: 18px;
+	line-height: 22px;
+	font-weight: 400;
+	font-family: Lato;
+	color: #4D4D4D;
+	text-decoration: none;
+}
+.call-manager{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--main-color);
+	color: #fff;
+	border-radius: 35px;
+	font-family: 'Futura PT';
+	font-style: normal;
+	font-weight: 800;
+	width: 422px;
+	height: 69px;
+	font-size: 24px;
+	line-height: 31px;
+	font-weight: 800;
+	font-family: Futura PT;
+	text-decoration: none;
+}
 
 
 @media screen and (min-width: 992px) {
@@ -3590,6 +3650,18 @@ ul.tm-list > li {
 
 	.ct-box.fv-box .ct-text {
 		font-size: 14px;
+	}
+	.lk-text p{
+		line-height: 19px;
+	}
+	.lk-text ul li{
+		font-size: 14px;
+		line-height: 17px;
+	}
+	.call-manager{
+		width: 278px;
+		font-size: 14px;
+		line-height: 18px;
 	}
 
 }
