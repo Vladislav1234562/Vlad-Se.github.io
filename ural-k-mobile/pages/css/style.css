@@ -2585,6 +2585,68 @@ input::-webkit-inner-spin-button {
   font-family: Futura PT;
   text-decoration: underline;
 }
+.lk{
+  margin-top: 47px;
+  margin-bottom: 108px;
+}
+.lk-text{
+	margin-bottom: 25px;
+}
+.lk-text p{
+	font-size: 29px;
+	line-height: 35px;
+	font-weight: 400;
+	font-family: Lato;
+	color: #000;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+}
+.lk-text ul{
+	margin: 0;
+	padding: 0;
+}
+.lk-text ul li{
+	font-size: 24px;
+	line-height: 29px;
+	font-weight: 400;
+	font-family: Lato;
+	color: #4D4D4D;
+	margin-bottom: 5px;
+	list-style: none;
+}
+.load-price{
+	display: flex;
+	align-items: center;
+	margin-bottom: 30px;
+	background: none;
+	border: none;
+	outline: none;
+}
+.load-price a{
+	margin-left: 20px;
+	font-size: 29px;
+	line-height: 35px;
+	font-weight: 400;
+	font-family: Lato;
+	color: #4D4D4D;
+	text-decoration: none;
+}
+.call-manager{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--main-color);
+	color: #fff;
+	border-radius: 35px;
+	font-style: normal;
+	width: 100%;
+	height: 100px;
+	font-size: 48px;
+	line-height: 62px;
+	font-weight: 500;
+	font-family: Futura PT;
+	text-decoration: none;
+}
 @media only screen and (max-width: 700px){
   .container{
     padding: 0 38px;
@@ -2703,6 +2765,11 @@ input::-webkit-inner-spin-button {
 		font-size: 18px;
 		line-height: 26px;
 	}
+  .call-manager{
+    font-size: 24px;
+    line-height: 31px;
+    height: 47px;
+  }
 	
 }
 @media only screen and (max-width: 600px){
@@ -3514,5 +3581,21 @@ input::-webkit-inner-spin-button {
   }
   .header__profile a:first-child{
     margin-bottom: 6px;
+  }
+  .lk{
+    margin-bottom: 54px;
+    margin-top: 20px;
+  }
+  .lk-text p{
+    font-size: 18px;
+    line-height: 21px;
+  }
+  .lk-text ul li{
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .load-price a{
+    font-size: 18px;
+    line-height: 22px;
   }
 }
