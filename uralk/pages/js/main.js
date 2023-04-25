@@ -729,11 +729,11 @@ $(document).ready(function () {
 		}
 	});
 	$(document).mouseup(function (e){ 
-        var div = $('.private__info'); 
+        var div = $('.h-private-wrp'); 
         if (!div.is(e.target) 
             && div.has(e.target).length === 0) { 
 				$('.private__btn').removeClass('open');
-				div.fadeOut(200);
+				$('.private__info').fadeOut(200);
         }
     });
 });
