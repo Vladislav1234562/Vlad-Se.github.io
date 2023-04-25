@@ -162,6 +162,25 @@ $(document).ready(function(e) {
 		autoplay: false,
 		variableWidth: true
 	});
+	/* Личный кабинет */
+	$('.private__btn').click(function(){
+		if($(this).hasClass('open')){
+			$(this).removeClass('open');
+			$('.private__info').fadeOut(200);
+		}
+		else{
+			$(this).addClass('open');
+			$('.private__info').fadeIn(200);
+		}
+	});
+	$(document).mouseup(function (e){ 
+        var div = $('.header-private'); 
+        if (!div.is(e.target) 
+            && div.has(e.target).length === 0) { 
+				$('.private__btn').removeClass('open');
+				$('.private__info').fadeOut(200);
+        }
+    });
 	/* Якоря */
 	anchorLink('.yak-btn');
 	/* Работа с количеством */
