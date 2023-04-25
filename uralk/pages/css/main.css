@@ -677,6 +677,21 @@ img {
 	font-style: normal;
 	font-weight: 400;
 }
+.ar-3d{
+	display: flex;
+	align-items: center;
+	margin-bottom: 54px;
+	cursor: pointer;
+}
+.ar-3d span{
+	margin-left: 15px;
+	color: #C20A0A;
+	font-family: 'Futura PT';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 24px;
+	line-height: 31px;
+}
 
 .h-auth-wrp a{
 	/*	iOS reset style*/
@@ -3177,7 +3192,6 @@ input[type=number] {
 	.gallery-modal .slick-next {
 		right: 40px;
 	}
-
 
 
 
@@ -6584,6 +6598,16 @@ ul.cart-list .fv-total {
 	.ct-store {
 	  	bottom: 40px;
 	}
+	.ar-3d span{
+		font-size: 15px;
+		line-height: 19px;
+		margin-left: 0;
+		margin-right: 12px;
+	}
+	.ar-3d svg{
+		order: 1;
+		width: 94px;
+	}
 }
 
 @media screen and (min-width: 992px) {
@@ -6619,6 +6643,22 @@ ul.cart-list .fv-total {
 }
 
 @media screen and (max-width: 991px) {
+	
+	
+	.ar-3d{
+		margin-bottom: 0;
+		margin-top: 25px;
+	}
+	.ar-3d svg{
+		width: 80px;
+		order: 1;
+	}
+	.ar-3d span{
+		font-size: 15px;
+		line-height: 19px;
+		margin-left: 0;
+		margin-right: 10px;
+	}
 	:root {
 		--main-font-size: 36px;
 		--site-padding: 54px;
