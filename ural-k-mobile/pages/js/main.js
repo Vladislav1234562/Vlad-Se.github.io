@@ -27,6 +27,35 @@ $(function(){
 				 $(this).attr("placeholder", $(this).data('empty'));  
 		  });
 	  }
+	function valid(input_id){
+	    input_val = $(input_id).val();
+	    if(!input_val)
+	      {
+	      $(input_id).css('border','1px solid #e40033');
+	      $(input_id).css('background-color','#fce5ea');
+	      }
+	    else
+	      {
+	      $(input_id).css('border','none');
+	      $(input_id).css('background-color','#F9F9F9');
+	      }
+	  }
+	function validChek(input_id){
+	    chek = input_id.find('input').attr('checked');
+	    if(chek == 'checked')
+	      {
+	      $(input_id).find('span').eq(0).css('border','1px solid #4D4D4D');
+	      }
+	    else
+	      {
+	      $(input_id).find('span').eq(0).css('border','1px solid #e40033');
+	      }
+	  }
+	  function clear(input_id,border,backg){
+	    if(border){$(input_id).css("border",border);}
+	    if(backg){$(input_id).css("background-color",backg);}
+	    $(input_id).val('');
+	  }
 	  function chekb(class_one,class_activ){
 		if(class_one.children('input').prop('checked') == false)
 			{
@@ -45,6 +74,14 @@ $(function(){
 			class_one.addClass(class_activ);
 			class_one.children('input').attr('checked','checked');
 			}
+	}
+	function anchorLink(name_tag){
+		$(name_tag).click(function(e){
+			e.preventDefault();
+			destination = $($(this).attr('href')).offset().top;
+			$('html').animate( { scrollTop: destination }, 1100 );
+			return false;
+		});
 	}
 $(document).ready(function(e) {
 	$(window).resize(function() {
@@ -125,6 +162,8 @@ $(document).ready(function(e) {
 		autoplay: false,
 		variableWidth: true
 	});
+	/* Якоря */
+	anchorLink('.yak-btn');
 	/* Работа с количеством */
 	$(document).on('click', '.item-count__name-type', function(){
 		$(this).addClass('_active');
@@ -181,7 +220,7 @@ $(document).ready(function(e) {
 		}
 	});
 	/* модалка звонка */
-	$('.header__call').click(function(e){
+	$('.header__call, .call-manager').click(function(e){
 		lockScroll();
 		e.preventDefault();
 		$('.page-shadow').fadeIn(200);
@@ -196,15 +235,21 @@ $(document).ready(function(e) {
 		$('.modal').fadeOut(200);
 		$('.modal-cart').fadeOut(200);
 		$('.modal-final').fadeOut(200);
+		$('.modal-auth').fadeOut(200);
 	});
-	$('.modal-btn').click(function(){
-		$('.modal').fadeOut(200);
-		setTimeout(function(){
-			$('.modal-final').fadeIn(200);
-		},200);
+	$('.modal').find('.modal-btn').click(function(){
+		valid('.modal-container input[name=modal_phone]');
+		valid('.modal-container input[name=modal_name]');
+	        validChek($(this));
+		if($('input[name=modal_name]').val() != '' && $('input[name=modal_phone]').val() != '' && $('.modal-chek').find('input').attr('checked') == 'checked'){
+			$('.modal').fadeOut(200);
+			setTimeout(function(){
+				$('.modal-final').fadeIn(200);
+			},200);
+		}
 	});
 	/* Млдалка корзины */
-	$('.tovars__item-cart').click(function(e){
+	$('.tovars__item-cart, .novelty__item-cart, .cart-b__item-cart').click(function(e){
 		lockScroll();
 		e.preventDefault();
 		$('.page-shadow').fadeIn(200);
@@ -220,16 +265,88 @@ $(document).ready(function(e) {
 			$('.city-hid').fadeIn(200);
 		},100);
 	});
+	/* модалка авторизации */
+	$('.header__auth').click(function(e){
+		e.preventDefault();
+		lockScroll();
+		$('.page-shadow').fadeIn(200);
+		setTimeout(function(){
+			$('.modal-auth').fadeIn(200);
+		},100);
+	});
+	$('.modal-auth').find('.modal-btn').click(function(){
+		valid('.modal-container input[name=modal_login]');
+		valid('.modal-container input[name=modal_pass]');
+		if($('input[name=modal_pass]').val() != '' && $('input[name=modal_login]').val() != ''){
+			$('.modal-auth').fadeOut(200);
+			$('.page-shadow').fadeOut(200);
+			$('.header__auth').css({"display":"none"});
+			$('.header__profile').fadeIn(200);
+		}
+	});
+	$('.city-close').click(function(e){
+		unlockScroll();
+		$('.page-shadow').fadeOut(200);
+		$('.city-hid').fadeOut(200);
+	});
 	$(document).mouseup(function (e){ 
-		var div = $('.city-hid, .modal-cart, .modal, .modal-final'); 
+		var div = $('.city-hid, .modal-cart, .modal, .modal-final, .modal-auth'); 
 		if (!div.is(e.target) 
 		    && div.has(e.target).length === 0) { 
 			div.fadeOut(200); 
 			$('.page-shadow').fadeOut(200);
 			$('.modal-cart').fadeOut(200);
 			$('.modal').fadeOut(200);
+			$('.modal-auth').fadeOut(200);
 			unlockScroll();
 		}
+	});
+	$('.city-search').find('input').click(function(){
+		$('.city-hid').css({"top":"10px","transform":"translate(-50%,0)"});
+	});
+	$('.city-search').find('input').focusout(function(){
+		$('.city-hid').css({"top":"50%","transform":"translate(-50%,-50%)"});
+	});
+	/* Меню */
+	$('.header__butter').click(function(){
+		$('.header__menu-hid').css({"transform":"translateX(0)"});
+		lockScroll();
+	});
+	$('.header__menu-close').click(function(){
+		$('.header__menu-hid').css({"transform":"translateX(-100%)"});
+		unlockScroll();
+	});
+	$('.header__podrazdels-top').click(function(e){
+		e.preventDefault();
+		if($(this).hasClass('open')){
+			$(this).removeClass('open');
+			$(this).parent().find('.header__menu-razdels').slideUp(200);
+		}
+		else{
+			$(this).addClass('open');
+			$(this).parent().find('.header__menu-razdels').slideDown(200);
+		}
+		
+	});
+	/* Валидация */
+	$('.form__inp').keyup(function(){
+	      valid($(this));
+	      validChek($(this));
+	});
+	$(document).on('click', '.form__btn', function(e) {
+		valid('input[name=form_name');
+		valid('input[name=form_mail]');
+		valid('input[name=form_phone]');
+		valid('input[name=form_organization]');
+		if($('input[name=form_name]').val() != '' && $('input[name=form_mail]').val() != '' && $('input[name=form_phone]').val() != '' &&$('input[name=form_organization]').val() != '' && $('.form__bottom-chek').find('input').attr('checked') == 'checked'){
+			
+		}
+		else{
+			e.preventDefault();	
+		}
+	});
+	$('.modal-container').find('input').keyup(function(){
+	      valid($(this));
 	});
 	/* Остаток на складе */
 	$('.tovars__item-balance').click(function(){
@@ -245,9 +362,11 @@ $(document).ready(function(e) {
 	/* Чекбоксы */
 	$('.form__bottom-chek, .filter__chek, .modal-chek').each(function () {
 		chekb_val($(this),'_active');
+		validChek($(this));
 	});
 	$('.form__bottom-chek, .filter__chek, .modal-chek').click(function(){
 		chekb($(this),'_active');
+		validChek($(this));
 	});
 	/* Маска на инпуты */
 	$('input[name=form_phone]').mask("+7 (999) 999 - 99 - 99");

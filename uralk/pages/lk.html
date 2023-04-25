@@ -32,6 +32,7 @@
 </head>
 
 <body>
+	<!--upd-->
 	<svg style="display: none;">
 		<symbol id="heard" viewBox="0 0 160 160">
 			<path d="m74.8364 151.219c-2.4737-1.89-5.1887-4.071-8.2054-6.522-8.7114-7.168-17.0072-14.823-24.8475-22.926-17.7482-18.364-30.1669-36.5391-34.79248-53.7935-1.28784-4.668-1.95718-9.4833-1.99102-14.3237 0-44.84166 42.3242-65.7571 74.9749-30.9881 32.7911-34.739 75.0251-15.00385 75.0251 31.0081-.038 4.8349-.714 9.6439-2.011 14.3037-4.616 17.2544-17.044 35.4395-34.783 53.7935-7.832 8.108-16.124 15.762-24.837 22.926-2.9664 2.441-5.7217 4.632-8.2054 6.522-1.4983 1.14-2.5743 1.931-3.1575 2.351l-2.0111 1.43-2.0011-1.43c-.5832-.42-1.6592-1.211-3.1575-2.351z" />
@@ -54,6 +55,7 @@
 			</g>
 		</symbol>
 	</svg>
+	<!--//upd-->
 	<div class="site-wrapper">
 		<header class="header">
 			<div class="crooked-container">
@@ -74,9 +76,11 @@
 							<button type="submit"><i class="icon-search"></i></button>
 						</form>
 					</div>
+
 					<!-- <div class="h-item h-tel-wrp">
 						<a href="tel:+79000000000" class="h-tel">+7 (900) 000 - 00 - 00</a>
 					</div> -->
+
 					<div class="h-item h-btn-wrp">
 						<a href="#callback" data-modal class="btn">ЗАКАЗАТЬ ЗВОНОК</a>
 					</div>
@@ -89,22 +93,41 @@
 							<a href="">Выйти</a>
 						</div>
 					</div>
+
+
 					<div class="h-item h-select-wrp">
-						<div class="custom-select placeholder">
+						<div class="custom-select select-modal placeholder">
 							<a href="#" class="c-select-title"><i class="icon-place"></i><span>Выбор региона</span></a>
-							<div class="c-select-drop-down">
-								<div class="c-select-scroll">
-									<ul class="c-select-list custom">
-										<li><a href="#" data-val="value1">Екатеринбург</a></li>
-										<li><a href="#" data-val="value2">Челябинск</a></li>
-										<li><a href="#" data-val="value3">Тюмень</a></li>
-										<li><a href="#" data-val="value4">Уфа</a></li>
-										<li><a href="#" data-val="value5">Пермь</a></li>
+							<div class="select-modal-frame">
+
+
+								<div class="modal city-select" style="display: none;">
+									<div class="cs-caption">Выберите город</div>
+									<ul class="main-city-list custom">
+										<li><a href="#">Екатерибург</a></li>
+										<li><a href="#">Тюмень</a></li>
+										<li><a href="#">Уфа</a></li>
+										<li><a href="#">Пермь</a></li>
+										<li><a href="#">Челябинск</a></li>
+										<li><a href="#">Ханты-Мансийск</a></li>
+										<li><a href="#">Салехард</a></li>
 									</ul>
+
+									<div class="cs-caption">или введите его название</div>
+									<div class="city-search">
+										<input type="search" name="textfield" autocomplete="off" placeholder="Ввведите название">
+										<div class="city-search-autocomplete">
+											<ul class="city-search-autocomplete-list custom">
+												<li><a href="#">Самара, Самарская обл.</a></li>
+												<li><a href="#">Саратов, Саратовская обл.</a></li>
+												<li><a href="#">Серпухов, Московская обл.</a></li>
+											</ul>
+										</div>
+									</div>
 								</div>
+
+
 							</div>
-							<!--current value-->
-							<input type="hidden" name="textfield">
 						</div>
 					</div>
 					<!--upd-->
@@ -135,7 +158,8 @@
 					<aside class="aside">
 						<div class="as-scroll">
 							<div class="as-wrp">
-								<!-- <div class="as-wr-top">
+								<!-- upd remove
+								<div class="as-wr-top">
 									<a href="#" class="logo">
 										<span class="logo-img">
 											<img src="img/logo-img.svg" alt="">
@@ -144,7 +168,8 @@
 											<img src="img/logo-text.svg" alt="">
 										</span>
 									</a>
-								</div> -->
+								</div>
+-->
 								<div class="as-wr-center">
 									<ul class="nav-list custom">
 										<li><a href="#">Оптовикам</a></li>
@@ -200,134 +225,29 @@
 						</div>
 					</aside>
 					<div class="content-col">
-						<h1>Новости</h1>
+						<h1>
+							Личный кабинет
+						</h1>
 						<ul class="custom breadcrumb">
 							<li><a href="#">Главная</a></li>
-							<li><span>Новости</span></li>
+							<li><span>Личный кабинет</span></li>
 						</ul>
-
-
-						<ul class="ct-list custom">
-							<li>
-								<div class="ct-box">
-									<a href="#" class="ct-box-img">
-										<img src="img/temp/img1.jpg" alt="">
-									</a>
-									<div class="ct-main">
-										<div class="ct-main-content">
-											<time datetime="2021-01-01">01.01.2021</time>
-											<a href="#" class="ct-name">
-												Название новости
-											</a>
-										</div>
-										<div class="ct-main-bottom">
-											<a href="#" class="btn btn-border">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="ct-box">
-									<a href="#" class="ct-box-img">
-										<img src="img/temp/img2.jpg" alt="">
-									</a>
-									<div class="ct-main">
-										<div class="ct-main-content">
-											<time datetime="2021-01-01">01.01.2021</time>
-											<a href="#" class="ct-name">
-												Название новости
-											</a>
-										</div>
-										<div class="ct-main-bottom">
-											<a href="#" class="btn btn-border">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="ct-box">
-									<a href="#" class="ct-box-img">
-										<img src="img/temp/img3.jpg" alt="">
-									</a>
-									<div class="ct-main">
-										<div class="ct-main-content">
-											<time datetime="2021-01-01">01.01.2021</time>
-											<a href="#" class="ct-name">
-												Название новости
-											</a>
-										</div>
-										<div class="ct-main-bottom">
-											<a href="#" class="btn btn-border">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-								</div>
-							</li>
-
-							<li>
-								<div class="ct-box">
-									<a href="#" class="ct-box-img">
-										<img src="img/temp/img1.jpg" alt="">
-									</a>
-									<div class="ct-main">
-										<div class="ct-main-content">
-											<time datetime="2021-01-01">01.01.2021</time>
-											<a href="#" class="ct-name">
-												Название новости
-											</a>
-										</div>
-										<div class="ct-main-bottom">
-											<a href="#" class="btn btn-border">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="ct-box">
-									<a href="#" class="ct-box-img">
-										<img src="img/temp/img2.jpg" alt="">
-									</a>
-									<div class="ct-main">
-										<div class="ct-main-content">
-											<time datetime="2021-01-01">01.01.2021</time>
-											<a href="#" class="ct-name">
-												Название новости
-											</a>
-										</div>
-										<div class="ct-main-bottom">
-											<a href="#" class="btn btn-border">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-								</div>
-							</li>
-							<li>
-								<div class="ct-box">
-									<a href="#" class="ct-box-img">
-										<img src="img/temp/img3.jpg" alt="">
-									</a>
-									<div class="ct-main">
-										<div class="ct-main-content">
-											<time datetime="2021-01-01">01.01.2021</time>
-											<a href="#" class="ct-name">
-												Название новости
-											</a>
-										</div>
-										<div class="ct-main-bottom">
-											<a href="#" class="btn btn-border">ПОДРОБНЕЕ</a>
-										</div>
-									</div>
-								</div>
-							</li>
-						</ul>
-
-						<div class="pagination">
-							<a href="#" class="pg-btn">назад</a>
-							<ul class="pg-list-custom custom">
-								<li class="active"><a href="#">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
+						<div class="lk-text">
+							<p>Публичное акционерное общество “ГАЗПРОМ”</p>
+							<ul>
+								<li>ОГРН 1027700070518</li>
+								<li>ИНН/КПП 1027700070518/1027700070518</li>
 							</ul>
-							<a href="#" class="pg-btn">вперёд</a>
 						</div>
+						<button class="load-price">
+							<svg width="45" height="49" viewBox="0 0 45 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M43.9623 32.0345C43.9623 32.0345 43.9623 32.0345 43.9623 31.9215L36.1801 6.70936C36.1312 6.55374 36.0331 6.41818 35.9006 6.32304C35.7681 6.22791 35.6083 6.17833 35.4452 6.18175H27.663C27.5616 6.18175 27.4611 6.20174 27.3674 6.24056C27.2736 6.27939 27.1885 6.33629 27.1167 6.40803C27.045 6.47977 26.9881 6.56494 26.9493 6.65867C26.9104 6.7524 26.8904 6.85287 26.8904 6.95432C26.8904 7.05578 26.9104 7.15624 26.9493 7.24997C26.9881 7.3437 27.045 7.42887 27.1167 7.50061C27.1885 7.57235 27.2736 7.62926 27.3674 7.66808C27.4611 7.70691 27.5616 7.72689 27.663 7.72689H34.8799L42.2664 31.3373H29.8865C29.6732 31.3414 29.47 31.4294 29.3212 31.5823L22.4623 38.8746L15.2454 31.6011C15.102 31.4488 14.9074 31.3548 14.6989 31.3373H2.69588L10.0824 7.70805H17.2993C17.5042 7.70805 17.7007 7.62665 17.8456 7.48177C17.9905 7.33688 18.0719 7.14038 18.0719 6.93548C18.0719 6.73058 17.9905 6.53408 17.8456 6.38919C17.7007 6.24431 17.5042 6.16291 17.2993 6.16291H9.51709C9.35159 6.16067 9.18996 6.21297 9.05714 6.31173C8.92433 6.41049 8.82771 6.55023 8.78221 6.70936L1 31.9215C1 31.9215 1 31.9215 1 32.0534C1 32.1853 1 32.0534 1 32.1476V47.712C1 47.9169 1.0814 48.1134 1.22628 48.2583C1.37116 48.4032 1.56767 48.4846 1.77257 48.4846H43.2274C43.4323 48.4846 43.6288 48.4032 43.7737 48.2583C43.9186 48.1134 44 47.9169 44 47.712V32.1476C44 32.1476 43.9623 32.091 43.9623 32.0345ZM42.4549 46.9394H2.50745V32.9201H14.3786L21.9159 40.4574C21.987 40.53 22.0721 40.5874 22.166 40.6263C22.2599 40.6651 22.3607 40.6846 22.4623 40.6835C22.5681 40.6825 22.6727 40.6604 22.7698 40.6183C22.8669 40.5762 22.9545 40.5151 23.0276 40.4385L30.188 32.9013H42.436L42.4549 46.9394Z" fill="#4D4D4E" stroke="#4D4D4E" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+								<path d="M17.7724 26.4194C17.7006 26.3476 17.6154 26.2907 17.5217 26.2518C17.4279 26.213 17.3274 26.193 17.2259 26.193C17.1244 26.193 17.0239 26.213 16.9302 26.2518C16.8364 26.2907 16.7512 26.3476 16.6795 26.4194C16.6077 26.4911 16.5508 26.5763 16.512 26.6701C16.4731 26.7638 16.4531 26.8643 16.4531 26.9658C16.4531 27.0673 16.4731 27.1678 16.512 27.2616C16.5508 27.3553 16.6077 27.4405 16.6795 27.5123L21.8613 32.6941C21.9331 32.7659 22.0183 32.8229 22.112 32.8617C22.2058 32.9006 22.3063 32.9206 22.4078 32.9206C22.5093 32.9206 22.6098 32.9006 22.7035 32.8617C22.7973 32.8229 22.8825 32.7659 22.9542 32.6941L28.2115 27.5688C28.2832 27.497 28.3401 27.4118 28.379 27.3181C28.4178 27.2243 28.4378 27.1238 28.4378 27.0223C28.4378 26.9209 28.4178 26.8204 28.379 26.7266C28.3401 26.6329 28.2832 26.5477 28.2115 26.4759C28.1397 26.4041 28.0545 26.3472 27.9607 26.3084C27.867 26.2695 27.7665 26.2495 27.665 26.2495C27.5635 26.2495 27.463 26.2695 27.3693 26.3084C27.2755 26.3472 27.1903 26.4041 27.1186 26.4759L23.2557 30.2445V1.77257C23.2557 1.56767 23.1743 1.37116 23.0294 1.22628C22.8846 1.0814 22.6881 1 22.4832 1C22.2783 1 22.0817 1.0814 21.9369 1.22628C21.792 1.37116 21.7106 1.56767 21.7106 1.77257V30.2822L17.7724 26.4194Z" fill="#4D4D4E" stroke="#4D4D4E" stroke-width="0.25" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+							<a href="">Скачать прайс-лист</a>
+						</button>
+						<a href="#callback" data-modal="" class="call-manager">СВЯЗАТЬСЯ С МЕНЕДЖЕРОМ</a>
+
 					</div>
 				</div>
 			</div>
@@ -495,9 +415,20 @@
 		</form>
 		<div class="auth-bottom">Если вы забыли пароль, обратитесь к своему менеджеру</div>
 	</div>
-
-
-
+	<!--upd-->
+	<div id="order-tnx" class="modal" style="display: none;">
+		<div class="tnx-logo">
+			<img src="img/md-logo.svg" alt="">
+		</div>
+		<div class="tnx-caption">Спасибо за заявку!</div>
+		<div class="tnx-text">
+			Менеджер свяжется с вами в ближайшее время,
+			а пока вы можете посмотреть наши
+			новые коллекции керамической
+			плитки и керамогранита
+		</div>
+	</div>
+	<!--//upd-->
 
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="js/jquery.fancybox.min.js"></script>
