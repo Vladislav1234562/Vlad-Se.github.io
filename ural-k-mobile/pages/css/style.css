@@ -3699,4 +3699,13 @@ input::-webkit-inner-spin-button {
     font-size: 18px;
     line-height: 22px;
   }
+  .private__info-description span{
+    margin-left: 3px;
+    font-size: 6px;
+    line-height: 8px;
+  }
+  .private__info-title{
+    font-size: 6px;
+    line-height: 8px;
+  }
 }
