@@ -728,6 +728,14 @@ $(document).ready(function () {
 			$('.private__info').fadeIn(200);
 		}
 	});
+	$(document).mouseup(function (e){ 
+        var div = $('.private__info'); 
+        if (!div.is(e.target) 
+            && div.has(e.target).length === 0) { 
+				$('.private__btn').removeClass('open');
+				div.fadeOut(200);
+        }
+    });
 });
 
 $(document).ready(function () {
