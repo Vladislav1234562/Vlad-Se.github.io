@@ -707,6 +707,18 @@ $(document).ready(function () {
         ]
     });
 */
+$(document).ready(function () {
+	$('.private__btn').click(function(){
+		if($(this).hasClass('open')){
+			$(this).removeClass('open');
+			$('.private__info').fadeOut(200);
+		}
+		else{
+			$(this).addClass('open');
+			$('.private__info').fadeIn(200);
+		}
+	});
+});
 
 $(document).ready(function () {
 	let fltr_i = 5;
