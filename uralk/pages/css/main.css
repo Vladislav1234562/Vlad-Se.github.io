@@ -1961,9 +1961,13 @@ ul.ct-list > li {
 	-webkit-box-direction: normal;
 	-ms-flex-direction: column;
 	flex-direction: column;
-
+	position: relative;
 }
-
+.ct-main__3d{
+	position: absolute;
+	top: 50px;
+	right: 10px;
+}
 .ct-name {
 	text-decoration: none;
 	font-family: 'Futura PT';
@@ -6075,6 +6079,15 @@ ul.cart-list .fv-total {
 	.ct-center{
 		align-items: flex-start !important;
 	}
+	.ct-main__3d{
+		top: 20px;
+		right: 4px;
+		width: 87px;
+	}
+	.ct-main__3d svg{
+		width: 100%;
+	}
+	
 }
 @media screen and (max-width: 1599px) and (min-width: 992px) {
 	.fv-add{
@@ -6607,6 +6620,9 @@ ul.cart-list .fv-total {
 	.ar-3d svg{
 		order: 1;
 		width: 94px;
+	}
+	.ct-main__3d{
+		width: 57px;
 	}
 }
 
