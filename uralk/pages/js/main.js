@@ -718,13 +718,29 @@ $(document).ready(function () {
     });
 */
 $(document).ready(function () {
-	$('.private__btn').hover(function(){
-		$(this).addClass('open');
+	if($(window).width()<=980){
+		$('.private__btn').hover(function(){
+			$(this).addClass('open');
 			$('.private__info').fadeIn(200);
-	},function(){
-		$(this).removeClass('open');
+		},function(){
+			$(this).removeClass('open');
 			$('.private__info').fadeOut(200);
-	});
+		});
+	}
+	else{
+		$('.private__btn').click(function(){
+			if($(this).hasClass('open')){
+				$(this).removeClass('open');
+				$('.private__info').fadeOut(200);
+			}
+			else{
+				$(this).addClass('open');
+				$('.private__info').fadeIn(200);
+			}
+		});
+	}
+	
+	
 	$(document).mouseup(function (e){ 
         var div = $('.h-private-wrp'); 
         if (!div.is(e.target) 
