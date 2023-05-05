@@ -719,15 +719,6 @@ $(document).ready(function () {
 */
 $(document).ready(function () {
 	if($(window).width()<=980){
-		$('.private__btn').hover(function(){
-			$(this).addClass('open');
-			$('.private__info').fadeIn(200);
-		},function(){
-			$(this).removeClass('open');
-			$('.private__info').fadeOut(200);
-		});
-	}
-	else{
 		$('.private__btn').click(function(){
 			if($(this).hasClass('open')){
 				$(this).removeClass('open');
@@ -737,6 +728,15 @@ $(document).ready(function () {
 				$(this).addClass('open');
 				$('.private__info').fadeIn(200);
 			}
+		});
+	}
+	else{
+		$('.private__btn').hover(function(){
+			$(this).addClass('open');
+			$('.private__info').fadeIn(200);
+		},function(){
+			$(this).removeClass('open');
+			$('.private__info').fadeOut(200);
 		});
 	}
 	
