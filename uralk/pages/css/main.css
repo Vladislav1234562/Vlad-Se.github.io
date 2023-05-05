@@ -1912,6 +1912,7 @@ ul.ct-list > li {
 	-ms-flex-direction: column;
 	flex-direction: column;
 	height: 100%;
+	position: relative;
 }
 
 .ct-box-img {
@@ -1963,10 +1964,25 @@ ul.ct-list > li {
 	flex-direction: column;
 	position: relative;
 }
+.ct-box-top{
+	position: relative;
+}
 .ct-main__3d{
 	position: absolute;
-	top: 50px;
-	right: 10px;
+	bottom: 16px;
+	right: 14px;
+	width: 71px;
+	height: 71px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.6);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.ct-main__3d svg{
+	width: 61px;
+	height: 26px;
 }
 .ct-name {
 	text-decoration: none;
