@@ -657,8 +657,8 @@ img {
 }
 .private__info-title{
 	margin-bottom: 6px;
-	font-size: 8px;
-	line-height: 10px;
+	font-size: 12px;
+	line-height: 12px;
 	font-family: 'Futura PT';
 	font-style: normal;
 	font-weight: 700;
@@ -668,10 +668,13 @@ img {
 	align-items: center;
 	text-decoration: none;
 }
+.private__info-description svg{
+	flex-shrink: 0;
+}
 .private__info-description span{
 	display: flex;
 	margin-left: 6px;
-	font-size: 8px;
+	font-size: 10px;
 	line-height: 10px;
 	font-family: 'Futura PT';
 	font-style: normal;
